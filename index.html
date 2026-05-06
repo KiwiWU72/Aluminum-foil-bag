@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鋁箔袋複合包材規格建議</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Arial", "Microsoft JhengHei", sans-serif;
+  font-size: 13px;
+  background: #f4f6f9;
+  color: #222;
+  padding: 28px 20px;
+}
+
+/* ── Page title ── */
+.page-title { text-align: center; margin-bottom: 28px; }
+.page-title h1 { font-size: 21px; font-weight: 700; color: #1a3a5c; }
+.page-title p  { margin-top: 5px; font-size: 12px; color: #777; }
+
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  gap: 3px;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+.tab-btn {
+  padding: 9px 18px;
+  border: 1px solid #d0d8e4;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  background: #dde5ef;
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #4a6080;
+  transition: background .12s;
+  white-space: nowrap;
+}
+.tab-btn:hover { background: #c8d5e8; }
+.tab-btn.active { background: #fff; color: #1a3a5c; border-bottom: 1px solid #fff; }
+.tab-btn.t0.active { color: #4a1a6e; border-top: 3px solid #7b3fb5; }
+.tab-btn.t1.active { color: #1a5c36; border-top: 3px solid #2e8b57; }
+.tab-btn.t2.active { color: #1a3a5c; border-top: 3px solid #2e6db4; }
+.tab-btn.t3.active { color: #7a2a00; border-top: 3px solid #c0522a; }
+
+/* ── Panels ── */
+.panel {
+  display: none;
+  background: #fff;
+  border: 1px solid #d0d8e4;
+  border-radius: 0 6px 6px 6px;
+  padding: 26px 26px 34px;
+}
+.panel.active { display: block; }
+
+/* ── Panel header ── */
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #e8eef5;
+  flex-wrap: wrap;
+}
+.panel-badge {
+  font-size: 11px; font-weight: 700;
+  padding: 3px 11px; border-radius: 20px; white-space: nowrap;
+}
+.t0 .panel-badge { background: #ede0f7; color: #4a1a6e; }
+.t1 .panel-badge { background: #d4edda; color: #1a5c36; }
+.t2 .panel-badge { background: #d0e4f7; color: #1a3a5c; }
+.t3 .panel-badge { background: #fde8d8; color: #7a2a00; }
+.panel-header h2 { font-size: 16px; font-weight: 700; }
+.t0 .panel-header h2 { color: #4a1a6e; }
+.t1 .panel-header h2 { color: #1a5c36; }
+.t2 .panel-header h2 { color: #1a3a5c; }
+.t3 .panel-header h2 { color: #7a2a00; }
+.structure-tag {
+  margin-left: auto;
+  font-size: 12.5px; font-weight: 700;
+  padding: 5px 13px; border-radius: 4px;
+  font-family: monospace; letter-spacing: .4px;
+}
+.t1 .structure-tag { background: #eaf7ee; color: #1a5c36; border: 1px solid #aad4bb; }
+.t2 .structure-tag { background: #e6f0fb; color: #1a3a5c; border: 1px solid #aac4e0; }
+.t3 .structure-tag { background: #fdf0e8; color: #7a2a00; border: 1px solid #e0aa88; }
+
+/* ── Section label ── */
+.section-label {
+  font-size: 10.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.2px;
+  color: #888; margin: 20px 0 7px;
+}
+
+/* ── Tables ── */
+table { width: 100%; border-collapse: collapse; margin-bottom: 4px; font-size: 12.5px; }
+th {
+  padding: 8px 11px; font-weight: 700; font-size: 11px;
+  text-align: left; white-space: nowrap;
+}
+td { padding: 8px 11px; vertical-align: top; line-height: 1.55; border-bottom: 1px solid #eef1f5; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafbfd; }
+.t0 th { background: #7b3fb5; color: #fff; }
+.t1 th { background: #2e8b57; color: #fff; }
+.t2 th { background: #2e6db4; color: #fff; }
+.t3 th { background: #c0522a; color: #fff; }
+
+/* ── Material card grid (tab 0) ── */
+.mat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+  margin-top: 4px;
+}
+.mat-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.mat-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+.mat-card-head .abbr {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .5px;
+  min-width: 60px;
+}
+.mat-card-head .fullname {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255,255,255,.85);
+  line-height: 1.3;
+}
+.mat-card-body { padding: 11px 14px; background: #fff; }
+.mat-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5px;
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+.mat-row:last-child { margin-bottom: 0; }
+.mat-key {
+  font-weight: 700;
+  min-width: 72px;
+  color: #555;
+  flex-shrink: 0;
+}
+.mat-val { color: #222; }
+
+/* card colour themes */
+.mc-opp  .mat-card-head { background: #3e86c8; color: #fff; }
+.mc-pet  .mat-card-head { background: #1a5c36; color: #fff; }
+.mc-al   .mat-card-head { background: #555;    color: #fff; }
+.mc-pe   .mat-card-head { background: #d17a22; color: #fff; }
+.mc-lldpe .mat-card-head { background: #b86a10; color: #fff; }
+.mc-cpp  .mat-card-head { background: #c0522a; color: #fff; }
+.mc-rcpp .mat-card-head { background: #922000; color: #fff; }
+.mc-ny   .mat-card-head { background: #7b3fb5; color: #fff; }
+
+/* badge in card body */
+.cbadge {
+  display: inline-block;
+  padding: 1px 7px; border-radius: 10px;
+  font-size: 10.5px; font-weight: 700;
+}
+.cb-outer  { background: #d0e4f7; color: #1a3a5c; }
+.cb-mid    { background: #e8e8e8; color: #333; }
+.cb-inner  { background: #fff3e0; color: #7a3c00; }
+.cb-buf    { background: #ede0f7; color: #4a1a6e; }
+.cb-warn   { background: #fde8d8; color: #7a2a00; }
+.cb-ok     { background: #d4edda; color: #1a5c36; }
+
+/* ── Layer diagram ── */
+.layer-diagram { display: flex; flex-direction: column; gap: 3px; margin-bottom: 18px; }
+.layer-row { display: flex; align-items: center; gap: 10px; }
+.layer-label {
+  font-size: 10px; font-weight: 700;
+  width: 82px; color: #555; text-align: right; flex-shrink: 0;
+}
+.layer-bar { flex: 1; padding: 7px 13px; border-radius: 3px; font-weight: 700; font-size: 12px; }
+.layer-desc { font-size: 11px; color: #555; flex: 1.2; }
+.lay-outer .layer-bar { background: #d9e8f7; color: #1a3a5c; border-left: 4px solid #2e6db4; }
+.lay-mid   .layer-bar { background: #e0e0e0; color: #333;    border-left: 4px solid #888; }
+.lay-ny    .layer-bar { background: #ede7f6; color: #4a148c; border-left: 4px solid #7b1fa2; }
+.lay-inner .layer-bar { background: #fff3e0; color: #7a3c00; border-left: 4px solid #e65100; }
+.layer-arrow { text-align: center; color: #bbb; font-size: 13px; padding-left: 96px; }
+
+/* ── Outer layer selector (tab 2 & 3) ── */
+.outer-options { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.outer-opt {
+  flex: 1; min-width: 160px;
+  border: 2px solid #d0d8e4;
+  border-radius: 6px; padding: 10px 13px;
+  background: #fafbfd;
+}
+.outer-opt.recommended { border-color: #2e6db4; background: #e6f0fb; }
+.outer-opt.alt         { border-color: #aaa;    background: #f7f7f7; }
+.outer-opt.caution     { border-color: #e0aa44; background: #fffbee; }
+.outer-opt-tag {
+  font-size: 10px; font-weight: 700; margin-bottom: 5px;
+  padding: 2px 7px; border-radius: 10px; display: inline-block;
+}
+.tag-rec  { background: #d0e4f7; color: #1a3a5c; }
+.tag-alt  { background: #ebebeb; color: #555; }
+.tag-caut { background: #fff3cd; color: #7a4f00; }
+.outer-opt-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; color: #222; }
+.outer-opt-desc { font-size: 11.5px; color: #555; line-height: 1.5; }
+
+/* ── Pill tags ── */
+.pill {
+  display: inline-block; padding: 2px 8px;
+  border-radius: 20px; font-size: 11px; font-weight: 700; margin: 1px;
+}
+.pill-red    { background: #fde8d8; color: #7a2a00; }
+.pill-green  { background: #d4edda; color: #1a5c36; }
+.pill-blue   { background: #d0e4f7; color: #1a3a5c; }
+.pill-grey   { background: #ebebeb; color: #444; }
+.pill-orange { background: #fff3cd; color: #7a4f00; }
+.pill-purple { background: #ede0f7; color: #4a1a6e; }
+
+/* ── Warning boxes ── */
+.warn-box {
+  border-radius: 5px; padding: 10px 13px;
+  margin-top: 8px; font-size: 12px; line-height: 1.6;
+}
+.warn-box.danger  { background: #fdecea; border-left: 4px solid #d9534f; color: #7a1a1a; }
+.warn-box.caution { background: #fff8e1; border-left: 4px solid #f0ad4e; color: #6d4c00; }
+.warn-box.ok      { background: #eaf7ee; border-left: 4px solid #2e8b57; color: #1a5c36; }
+.warn-box.info    { background: #e6f0fb; border-left: 4px solid #2e6db4; color: #1a3a5c; }
+.warn-box strong  { display: block; margin-bottom: 3px; }
+
+/* ── Steps ── */
+.steps { display: flex; flex-direction: column; gap: 0; }
+.step-row { display: flex; align-items: flex-start; }
+.step-num {
+  width: 30px; height: 30px; border-radius: 50%;
+  font-size: 12px; font-weight: 700; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.t1 .step-num { background: #2e8b57; }
+.t2 .step-num { background: #2e6db4; }
+.t3 .step-num { background: #c0522a; }
+.step-content { flex: 1; padding: 2px 0 18px 13px; }
+.step-title { font-weight: 700; font-size: 12.5px; }
+.step-body  { margin-top: 4px; font-size: 12px; color: #444; line-height: 1.65; }
+
+/* col helpers */
+.col-item { width: 120px; font-weight: 600; color: #444; }
+.col-spec { width: 160px; }
+.col-alt  { width: 145px; color: #666; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="page-title">
+  <h1>鋁箔袋複合包材規格建議</h1>
+  <p>Aluminum Foil Laminated Packaging Specification　｜　材料特性 · 粉劑 · 中性液劑 · pH 3-5 果凍液劑</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn t0 active" onclick="switchTab(0)">00 材料特性</button>
+  <button class="tab-btn t1"        onclick="switchTab(1)">① 粉劑</button>
+  <button class="tab-btn t2"        onclick="switchTab(2)">② 中性液劑</button>
+  <button class="tab-btn t3"        onclick="switchTab(3)">③ pH 3-5 果凍液劑</button>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PANEL 0 — 材料特性
+══════════════════════════════════════ -->
+<div class="panel t0 active" id="panel-0">
+
+  <div class="panel-header">
+    <span class="panel-badge">基礎知識</span>
+    <h2>常用薄膜材料特性總覽</h2>
+  </div>
+
+  <div class="section-label">各材料快速查閱卡</div>
+  <div class="mat-grid">
+
+    <!-- OPP -->
+    <div class="mat-card mc-opp">
+      <div class="mat-card-head">
+        <span class="abbr">OPP</span>
+        <span class="fullname">Oriented Polypropylene<br>雙向延伸聚丙烯</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-outer">外層</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">100 ~ 110°C（不耐高溫殺菌）</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val">中等，pH 5 ~ 9</span></div>
+        <div class="mat-row"><span class="mat-key">熱封性</span><span class="mat-val"><span class="cbadge cb-warn">極差</span>　分子已拉伸定向，無法自我熱封</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">透明度高、剛性好、成本最低、印刷適性佳</span></div>
+        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">不耐高溫製程、熱封需依賴其他內層</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">乾燥粉末、零食、常溫充填產品</span></div>
+      </div>
+    </div>
+
+    <!-- PET -->
+    <div class="mat-card mc-pet">
+      <div class="mat-card-head">
+        <span class="abbr">PET</span>
+        <span class="fullname">Polyethylene Terephthalate<br>聚對苯二甲酸乙二酯</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-outer">外層</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">250 ~ 260°C（熔點最高）</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val"><span class="cbadge cb-ok">優</span>　pH 2 ~ 12，對酸鹼穩定</span></div>
+        <div class="mat-row"><span class="mat-key">熱封性</span><span class="mat-val"><span class="cbadge cb-warn">極差</span>　不具熱封性，需搭配熱封層</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">剛性最強、尺寸穩定、耐高溫、抗酸鹼、印刷精度最高</span></div>
+        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">成本較 OPP 高 20 ~ 30%，需搭配熱封內層</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">液劑、酸性產品、高溫充填、高品質印刷</span></div>
+      </div>
+    </div>
+
+    <!-- AL -->
+    <div class="mat-card mc-al">
+      <div class="mat-card-head">
+        <span class="abbr">AL</span>
+        <span class="fullname">Aluminum Foil<br>鋁箔</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-mid">中層（阻隔層）</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">660°C（金屬熔點），實用無上限</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val"><span class="cbadge cb-warn">差</span>　鋁為活潑金屬，酸鹼均可腐蝕；需靠塑料層保護</span></div>
+        <div class="mat-row"><span class="mat-key">常見厚度</span><span class="mat-val">6.5 μm / 7 μm / 9 μm　（越厚阻隔越穩定）</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">近乎 100% 阻隔水氣（WVTR）、氧氣（OTR）、光線</span></div>
+        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">脆、易折出微孔（Pinhole）、不耐酸鹼直接接觸</span></div>
+        <div class="mat-row"><span class="mat-key">辨識方法</span><span class="mat-val">對光完全不透光 → 純鋁箔；透光 → 鍍鋁（VMPET）</span></div>
+      </div>
+    </div>
+
+    <!-- PE -->
+    <div class="mat-card mc-pe">
+      <div class="mat-card-head">
+        <span class="abbr">PE</span>
+        <span class="fullname">Polyethylene<br>聚乙烯</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">LDPE：約 105°C　/　HDPE：約 130°C</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val">良好，但分子間隙較大，酸性小分子滲透率高於 CPP</span></div>
+        <div class="mat-row"><span class="mat-key">熱封性</span><span class="mat-val"><span class="cbadge cb-ok">優</span>　低溫熱封，100 ~ 120°C 即可封合</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">成本最低、柔軟性佳、低溫熱封性好</span></div>
+        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">耐熱差、對酸性及油脂阻隔力弱於 CPP</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">乾燥粉末、常溫中性產品；不建議用於液劑或酸性產品</span></div>
+      </div>
+    </div>
+
+    <!-- LLDPE -->
+    <div class="mat-card mc-lldpe">
+      <div class="mat-card-head">
+        <span class="abbr">LLDPE</span>
+        <span class="fullname">Linear Low Density Polyethylene<br>線性低密度聚乙烯</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">約 115 ~ 120°C</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val">良好（與 PE 相近）</span></div>
+        <div class="mat-row"><span class="mat-key">與 LDPE 差異</span><span class="mat-val">線性分子鏈結構使斷裂伸長率更高、抗穿刺性更強</span></div>
+        <div class="mat-row"><span class="mat-key">熱封性</span><span class="mat-val"><span class="cbadge cb-ok">優</span>　熱封起始溫度低，封口外觀更平整</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">比 LDPE 更韌、更耐撕裂，熱封強度略優於 LDPE</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">粉劑標準內層；需要柔韌性的軟包裝；比 LDPE 更推薦</span></div>
+      </div>
+    </div>
+
+    <!-- CPP -->
+    <div class="mat-card mc-cpp">
+      <div class="mat-card-head">
+        <span class="abbr">CPP</span>
+        <span class="fullname">Cast Polypropylene<br>流延聚丙烯</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">140 ~ 150°C（明顯優於 PE）</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val"><span class="cbadge cb-ok">優</span>　非極性聚合物，對酸鹼化學惰性強</span></div>
+        <div class="mat-row"><span class="mat-key">工藝特點</span><span class="mat-val">不拉伸（流延）→ 分子隨機排列 → 熱封性佳、柔韌性好</span></div>
+        <div class="mat-row"><span class="mat-key">熱封性</span><span class="mat-val"><span class="cbadge cb-ok">優</span>　熱封強度 &gt;30 N/15mm</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">耐熱耐油、化學穩定、分子間隙比 PE 小（酸性阻隔更佳）</span></div>
+        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">不耐蒸煮（121°C 以上需用 RCPP）</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">中性液劑、含油粉末；pH 3-5 液劑需升級 RCPP</span></div>
+      </div>
+    </div>
+
+    <!-- RCPP -->
+    <div class="mat-card mc-rcpp">
+      <div class="mat-card-head">
+        <span class="abbr">RCPP</span>
+        <span class="fullname">Retort Cast Polypropylene<br>耐蒸煮流延聚丙烯</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val"><span class="cbadge cb-ok">121 ~ 135°C</span>　高壓殺菌釜條件下仍穩定</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val"><span class="cbadge cb-ok">極優</span>　嵌段結構使分子間隙更小，酸性滲透率最低</span></div>
+        <div class="mat-row"><span class="mat-key">與 CPP 差異</span><span class="mat-val">分子鏈嵌段共聚結構 → 在高溫下不縮水、封口強度不崩解</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">耐酸滲透能力比 CPP 強 3~5 倍；pH 3-5 唯一推薦內層</span></div>
+        <div class="mat-row"><span class="mat-key">採購警示</span><span class="mat-val"><span class="cbadge cb-warn">供應商可能以 CPP 冒充</span>　須要求附耐蒸煮認證書</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">pH 3-5 酸性液劑、果凍、需高溫殺菌之食品</span></div>
+      </div>
+    </div>
+
+    <!-- NY -->
+    <div class="mat-card mc-ny">
+      <div class="mat-card-head">
+        <span class="abbr">NY / PA</span>
+        <span class="fullname">Nylon / Polyamide<br>尼龍 / 聚醯胺</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-outer">外層</span>　或　<span class="cbadge cb-buf">緩衝層（外層與AL之間）</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">約 220°C（熔點高，耐蒸煮）</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val">中等；不耐強酸（pH &lt;3）、不耐強鹼（pH &gt;10）</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val"><strong>韌性最強</strong>、抗穿刺力高、斷裂伸長率大；防止 AL 折疊微孔</span></div>
+        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">易吸濕（影響加工穩定性），加工前需充分乾燥；成本較高</span></div>
+        <div class="mat-row"><span class="mat-key">用作外層</span><span class="mat-val">提供良好抗穿刺與耐磨性，常見於冷凍食品、含骨肉類包裝</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">含顆粒果凍、冷凍食品、需高耐穿刺的液劑包裝</span></div>
+      </div>
+    </div>
+
+  </div><!-- /mat-grid -->
+
+  <div class="section-label">材料比較速查表</div>
+  <table>
+    <tr>
+      <th>材料</th><th>耐熱上限</th><th>pH 耐受</th><th>熱封性</th><th>抗穿刺</th><th>成本指數</th><th>主要用途層位</th>
+    </tr>
+    <tr>
+      <td><strong>OPP</strong></td><td>100 ~ 110°C</td><td>中等</td>
+      <td><span class="pill pill-red">差</span></td><td><span class="pill pill-grey">普通</span></td>
+      <td>★☆☆☆☆（最低）</td><td>外層</td>
+    </tr>
+    <tr>
+      <td><strong>PET</strong></td><td>250 ~ 260°C</td><td><span class="pill pill-green">優</span> pH 2~12</td>
+      <td><span class="pill pill-red">差</span></td><td><span class="pill pill-grey">普通</span></td>
+      <td>★★☆☆☆</td><td>外層</td>
+    </tr>
+    <tr>
+      <td><strong>NY</strong></td><td>220°C</td><td>中等（不耐 pH&lt;3）</td>
+      <td><span class="pill pill-orange">普通</span></td><td><span class="pill pill-green">最強</span></td>
+      <td>★★★☆☆</td><td>外層 / 緩衝層</td>
+    </tr>
+    <tr>
+      <td><strong>AL</strong></td><td>實用無上限</td><td><span class="pill pill-red">差（金屬腐蝕）</span></td>
+      <td><span class="pill pill-red">無</span></td><td><span class="pill pill-red">極脆</span></td>
+      <td>★★★☆☆</td><td>中層（阻隔）</td>
+    </tr>
+    <tr>
+      <td><strong>PE</strong></td><td>105 ~ 130°C</td><td>良好（但滲透率高）</td>
+      <td><span class="pill pill-green">優</span></td><td><span class="pill pill-grey">普通</span></td>
+      <td>★☆☆☆☆（最低）</td><td>內層</td>
+    </tr>
+    <tr>
+      <td><strong>LLDPE</strong></td><td>115 ~ 120°C</td><td>良好</td>
+      <td><span class="pill pill-green">優</span></td><td><span class="pill pill-blue">較好</span></td>
+      <td>★★☆☆☆</td><td>內層</td>
+    </tr>
+    <tr>
+      <td><strong>CPP</strong></td><td>140 ~ 150°C</td><td><span class="pill pill-green">優</span></td>
+      <td><span class="pill pill-green">優</span></td><td><span class="pill pill-grey">普通</span></td>
+      <td>★★☆☆☆</td><td>內層</td>
+    </tr>
+    <tr>
+      <td><strong>RCPP</strong></td><td><span class="pill pill-green">121 ~ 135°C</span></td>
+      <td><span class="pill pill-green">極優（酸性專用）</span></td>
+      <td><span class="pill pill-green">優</span></td><td><span class="pill pill-grey">普通</span></td>
+      <td>★★★☆☆</td><td>內層</td>
+    </tr>
+  </table>
+
+</div><!-- /panel-0 -->
+
+
+<!-- ══════════════════════════════════════
+     PANEL 1 — 粉劑
+══════════════════════════════════════ -->
+<div class="panel t1" id="panel-1">
+
+  <div class="panel-header">
+    <span class="panel-badge">pH 6 ~ 7　乾燥</span>
+    <h2>粉劑　Powder</h2>
+    <span class="structure-tag">OPP / AL / PE（LLDPE）</span>
+  </div>
+
+  <div class="section-label">複合結構</div>
+  <div class="layer-diagram">
+    <div class="layer-row lay-outer">
+      <span class="layer-label">外層 Outer</span>
+      <span class="layer-bar">OPP　12 ~ 15 μm</span>
+      <span class="layer-desc">透明度佳，成本最低；不耐高溫殺菌</span>
+    </div>
+    <div class="layer-arrow">↕ 膠水</div>
+    <div class="layer-row lay-mid">
+      <span class="layer-label">中層 Middle</span>
+      <span class="layer-bar">AL 鋁箔　7 μm</span>
+      <span class="layer-desc">完全阻隔水氣、氧氣、光線</span>
+    </div>
+    <div class="layer-arrow">↕ 膠水</div>
+    <div class="layer-row lay-inner">
+      <span class="layer-label">內層 Inner</span>
+      <span class="layer-bar">PE / LLDPE　40 ~ 60 μm</span>
+      <span class="layer-desc">低溫熱封，成本最低；LLDPE 韌性優於 LDPE</span>
+    </div>
+  </div>
+
+  <div class="section-label">外層選擇</div>
+  <div class="outer-options">
+    <div class="outer-opt recommended">
+      <span class="outer-opt-tag tag-rec">★ 推薦</span>
+      <div class="outer-opt-name">OPP　12 ~ 15 μm</div>
+      <div class="outer-opt-desc">成本最低、透明度最高，適合常溫乾燥粉末。無高溫製程需求時首選。</div>
+    </div>
+    <div class="outer-opt alt">
+      <span class="outer-opt-tag tag-alt">替代</span>
+      <div class="outer-opt-name">PET　12 μm</div>
+      <div class="outer-opt-desc">印刷精度更高、尺寸更穩定；適合需要精緻外觀或含揮發性芳香成分的粉末。成本較 OPP 高約 25%。</div>
+    </div>
+  </div>
+
+  <div class="section-label">各層規格</div>
+  <table>
+    <tr><th class="col-item">層位</th><th class="col-spec">推薦規格</th><th class="col-alt">替代規格</th><th>選用說明</th></tr>
+    <tr>
+      <td class="col-item">外層</td><td>OPP　12 ~ 15 μm</td><td>PET　12 μm</td>
+      <td>乾燥粉末無高溫需求，OPP 成本優；含油脂或揮發性成分建議升 PET</td>
+    </tr>
+    <tr>
+      <td class="col-item">中層（AL）</td><td>7 μm</td><td>6.5 μm（輕量化）</td>
+      <td>7 μm 為標準食品級；6.5 μm 可節省成本，但需嚴格控制複合壓力防微孔</td>
+    </tr>
+    <tr>
+      <td class="col-item">內層</td><td>LLDPE　50 μm</td><td>CPP　40 μm</td>
+      <td>中性乾粉 LLDPE 已足夠；含高油脂（堅果、咖啡）建議升 CPP 耐油</td>
+    </tr>
+    <tr>
+      <td class="col-item">總厚度</td><td>70 ~ 90 μm</td><td>60 μm（輕量化）</td>
+      <td>粉劑受力小，70 μm 結構強度充足</td>
+    </tr>
+  </table>
+
+  <div class="section-label">膠水規格</div>
+  <table>
+    <tr><th class="col-item">項目</th><th class="col-spec">規格</th><th>說明</th></tr>
+    <tr><td class="col-item">類別</td><td><span class="pill pill-green">通用型雙組份 PU</span></td><td>General Grade，pH 6~8 中性產品適用，成本最低</td></tr>
+    <tr><td class="col-item">上膠量</td><td>3.0 ~ 3.5 g/m²</td><td>乾燥粉末需求低，3.0 g/m² 已足夠，2.8 為下限</td></tr>
+    <tr><td class="col-item">熟化條件</td><td>50°C × 48h</td><td>確保 -NCO 與 -OH 完全反應，達到基礎交聯密度</td></tr>
+  </table>
+
+  <div class="section-label">製程重點</div>
+  <div class="steps">
+    <div class="step-row"><div class="step-num">1</div><div class="step-content">
+      <div class="step-title">電暈處理</div>
+      <div class="step-body">OPP ≥ 38 dyn/cm，LLDPE ≥ 40 dyn/cm</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">2</div><div class="step-content">
+      <div class="step-title">複合貼合</div>
+      <div class="step-body">上膠量 3.0 ~ 3.5 g/m²；貼合溫度 60 ~ 70°C；線速度 60 ~ 100 m/min</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">3</div><div class="step-content">
+      <div class="step-title">熟化</div>
+      <div class="step-body">50°C × 48h，溫差 ≤ ±2°C</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">4</div><div class="step-content">
+      <div class="step-title">熱封（製袋）</div>
+      <div class="step-body">150 ~ 170°C　/　0.3 ~ 0.5 MPa　/　1 ~ 2s；細粉建議增設除靜電裝置防止封口污染</div>
+    </div></div>
+  </div>
+
+  <div class="section-label">注意事項</div>
+  <table>
+    <tr><th class="col-item">項目</th><th>要求</th></tr>
+    <tr><td class="col-item">熱封強度</td><td>≥ 30 N/15mm</td></tr>
+    <tr><td class="col-item">殘留溶劑</td><td>≤ 5 mg/m²（食品級），苯類溶劑 = 0</td></tr>
+    <tr><td class="col-item">細粉靜電</td><td>粒徑 &lt; 50 μm 易靜電堆積於封口區造成虛封，建議選抗靜電型 LLDPE 或加設除靜電裝置</td></tr>
+    <tr><td class="col-item">高油脂粉末</td><td>堅果粉、咖啡粉等建議升 CPP 內層，避免脂肪酸對 PE 產生輕微溶脹</td></tr>
+  </table>
+  <div class="warn-box ok" style="margin-top:12px">
+    <strong>✅ 總結</strong>
+    OPP / AL / LLDPE 是最具成本效益的標準結構，適合常溫存放的中性乾燥粉末。若預算允許可升 PET 外層提升印刷精度；含油脂則升 CPP 內層。
+  </div>
+
+</div><!-- /panel-1 -->
+
+
+<!-- ══════════════════════════════════════
+     PANEL 2 — 中性液劑
+══════════════════════════════════════ -->
+<div class="panel t2" id="panel-2">
+
+  <div class="panel-header">
+    <span class="panel-badge">pH 6 ~ 7　液體</span>
+    <h2>中性液劑　Neutral Liquid</h2>
+    <span class="structure-tag">PET（or NY）/ AL / CPP</span>
+  </div>
+
+  <div class="section-label">複合結構</div>
+  <div class="layer-diagram">
+    <div class="layer-row lay-outer">
+      <span class="layer-label">外層 Outer</span>
+      <span class="layer-bar">PET　12 μm　（主選）</span>
+      <span class="layer-desc">剛性強、耐高溫、尺寸穩定；液劑充填首選</span>
+    </div>
+    <div class="layer-arrow">↕ 膠水</div>
+    <div class="layer-row lay-mid">
+      <span class="layer-label">中層 Middle</span>
+      <span class="layer-bar">AL 鋁箔　7 μm</span>
+      <span class="layer-desc">完全阻隔水氣與氧氣</span>
+    </div>
+    <div class="layer-arrow">↕ 膠水</div>
+    <div class="layer-row lay-inner">
+      <span class="layer-label">內層 Inner</span>
+      <span class="layer-bar">CPP　40 ~ 50 μm</span>
+      <span class="layer-desc">分子間隙比 PE 小，耐油、化學穩定；液劑標準內層</span>
+    </div>
+  </div>
+
+  <div class="section-label">外層選擇（三種選項）</div>
+  <div class="outer-options">
+    <div class="outer-opt recommended">
+      <span class="outer-opt-tag tag-rec">★ 主推</span>
+      <div class="outer-opt-name">PET　12 μm</div>
+      <div class="outer-opt-desc">剛性最高，熔點 260°C，高溫充填或封口時不縮水變形。對液體阻隔性好，印刷精度最佳。<br><strong>適用：一般液劑、熱充填、高品質外觀。</strong></div>
+    </div>
+    <div class="outer-opt alt">
+      <span class="outer-opt-tag tag-alt">替代 A</span>
+      <div class="outer-opt-name">NY（尼龍）　15 μm</div>
+      <div class="outer-opt-desc">韌性最強，抗穿刺力遠優於 PET，耐蒸煮（220°C）。適合需要柔韌性的液袋或含顆粒液體。吸濕性較高，加工前需乾燥。<br><strong>適用：含顆粒液體、冷凍後仍需柔軟的包裝。</strong></div>
+    </div>
+    <div class="outer-opt alt">
+      <span class="outer-opt-tag tag-alt">替代 B</span>
+      <div class="outer-opt-name">OPP　15 μm</div>
+      <div class="outer-opt-desc">透明度最高、成本最低，但耐熱上限僅 110°C。<strong>僅限常溫充填、無高溫殺菌需求</strong>的液劑，且充填設備封口溫度需嚴格控制。<br><strong>適用：常溫低黏度液劑（如一般飲料補充包）。</strong></div>
+    </div>
+  </div>
+
+  <div class="section-label">各層規格</div>
+  <table>
+    <tr><th class="col-item">層位</th><th class="col-spec">推薦規格</th><th class="col-alt">替代規格</th><th>選用說明</th></tr>
+    <tr>
+      <td class="col-item">外層</td>
+      <td>PET　12 μm</td>
+      <td>NY　15 μm / OPP　15 μm</td>
+      <td>PET 為標準；NY 用於需強韌性或含顆粒液體；OPP 僅限常溫充填</td>
+    </tr>
+    <tr>
+      <td class="col-item">中層（AL）</td><td>7 μm</td><td>9 μm（長途運輸）</td>
+      <td>7 μm 標準；長途海運或高振動環境可升 9 μm 降低微孔風險</td>
+    </tr>
+    <tr>
+      <td class="col-item">內層</td><td>CPP　40 ~ 50 μm</td><td>PE　50 μm（成本考量）</td>
+      <td>CPP 對液體的阻隔力與化學穩定性優於 PE；含酒精/精油時務必選 CPP</td>
+    </tr>
+    <tr>
+      <td class="col-item">總厚度</td><td>90 ~ 110 μm</td><td>80 μm</td>
+      <td>液劑靜水壓大，需較厚結構防止運輸中層間脫離</td>
+    </tr>
+  </table>
+
+  <div class="section-label">膠水規格</div>
+  <table>
+    <tr><th class="col-item">項目</th><th class="col-spec">規格</th><th>說明</th></tr>
+    <tr>
+      <td class="col-item">類別</td>
+      <td><span class="pill pill-blue">抗介質型 PU</span><br>Medium-High Grade</td>
+      <td>液劑長期接觸膠水層，通用型不夠，需抗介質型確保界面不水解脫層</td>
+    </tr>
+    <tr><td class="col-item">上膠量</td><td>3.5 ~ 4.0 g/m²</td><td>液劑需較厚膠層，3.2 g/m² 為下限</td></tr>
+    <tr><td class="col-item">耐 pH</td><td>pH 4.5 ~ 6（弱酸耐受）</td><td>中性液劑適用；若含微量有機酸（如乳酸）仍可承受</td></tr>
+    <tr><td class="col-item">含酒精/精油</td><td><span class="pill pill-orange">需溶脹測試</span></td><td>建議選無溶劑型 PU 或確認膠水供應商的溶脹相容報告</td></tr>
+    <tr><td class="col-item">熟化條件</td><td>50°C × 48 ~ 60h</td><td>液劑建議偏長，確保 AL/CPP 界面完全交聯後再充填</td></tr>
+  </table>
+
+  <div class="section-label">製程重點</div>
+  <div class="steps">
+    <div class="step-row"><div class="step-num">1</div><div class="step-content">
+      <div class="step-title">電暈確認</div>
+      <div class="step-body">CPP 表面張力 ≥ 40 dyn/cm；PET 出廠已電暈，確認 ≥ 44 dyn/cm；NY 使用前確認 ≥ 42 dyn/cm（需充分乾燥）</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">2</div><div class="step-content">
+      <div class="step-title">複合貼合</div>
+      <div class="step-body">上膠量 3.5 ~ 4.0 g/m²；確認無氣泡與條紋；NY 外層需注意預乾燥（60°C × 30min），防止吸濕導致複合不均</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">3</div><div class="step-content">
+      <div class="step-title">熟化</div>
+      <div class="step-body">50°C × 48 ~ 60h；充填前確認 AL/CPP 剝離強度 ≥ 2.2 N/15mm</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">4</div><div class="step-content">
+      <div class="step-title">熱封（製袋）</div>
+      <div class="step-body">160 ~ 180°C　/　0.3 ~ 0.5 MPa　/　1 ~ 2s；每批次抽樣測封口強度</div>
+    </div></div>
+  </div>
+
+  <div class="section-label">注意事項</div>
+  <table>
+    <tr><th class="col-item">項目</th><th>要求</th></tr>
+    <tr><td class="col-item">熱封強度</td><td>≥ 35 N/15mm；確保液劑靜水壓下不洩漏</td></tr>
+    <tr><td class="col-item">殘留溶劑</td><td>≤ 5 mg/m²；液劑直接接觸，殘留溶劑可能溶入內容物</td></tr>
+    <tr><td class="col-item">注水測試</td><td>充填模擬液，1.5 倍重量靜置 24h 觀察滲漏</td></tr>
+    <tr><td class="col-item">NY 外層特別注意</td><td>NY 吸濕性高，原料存放需防潮；若複合時吸濕，膠水附著力下降，建議上機前 60°C 預乾燥</td></tr>
+    <tr><td class="col-item">OPP 外層限制</td><td>僅限常溫充填，封口溫度絕不超過 100°C，否則 OPP 縮水導致封口歪斜或氣泡</td></tr>
+  </table>
+  <div class="warn-box info" style="margin-top:12px">
+    <strong>💡 含酒精或精油成分特別提示</strong>
+    酒精、精油等介質可能使通用型膠水溶脹導致脫層。建議選無溶劑型 PU 或先向膠水供應商確認溶脹相容性報告，再定規格。
+  </div>
+
+</div><!-- /panel-2 -->
+
+
+<!-- ══════════════════════════════════════
+     PANEL 3 — pH 3-5 果凍液劑
+══════════════════════════════════════ -->
+<div class="panel t3" id="panel-3">
+
+  <div class="panel-header">
+    <span class="panel-badge">pH 3 ~ 5　強酸　⚠</span>
+    <h2>pH 3-5 果凍液劑　Acidic Jelly</h2>
+    <span class="structure-tag">PET（or NY+PET）/ AL / RCPP</span>
+  </div>
+
+  <div class="section-label">複合結構</div>
+  <div class="layer-diagram">
+    <div class="layer-row lay-outer">
+      <span class="layer-label">外層 Outer</span>
+      <span class="layer-bar">PET　12 μm　★ 首選</span>
+      <span class="layer-desc">熔點 260°C、pH 2~12 穩定；酸性環境尺寸最穩定</span>
+    </div>
+    <div class="layer-arrow">↕ 膠水</div>
+    <div class="layer-row lay-ny">
+      <span class="layer-label">緩衝層（選配）</span>
+      <span class="layer-bar">NY 尼龍　15 μm　（含顆粒強烈建議）</span>
+      <span class="layer-desc">高韌性抗穿刺；防止果粒刺穿 AL 微孔</span>
+    </div>
+    <div class="layer-arrow">↕ 膠水</div>
+    <div class="layer-row lay-mid">
+      <span class="layer-label">中層 Middle</span>
+      <span class="layer-bar">AL 鋁箔　9 μm　★ 建議升規</span>
+      <span class="layer-desc">較厚鋁箔延長酸性小分子攻擊前的滲透時間</span>
+    </div>
+    <div class="layer-arrow">↕ 膠水（Retort Grade）</div>
+    <div class="layer-row lay-inner">
+      <span class="layer-label">內層 Inner</span>
+      <span class="layer-bar">RCPP（耐蒸煮 CPP）　50 ~ 60 μm　★ 強制</span>
+      <span class="layer-desc">嵌段結構；耐酸滲透比普通 CPP 強 3~5 倍</span>
+    </div>
+  </div>
+
+  <div class="warn-box danger" style="margin-bottom:16px">
+    <strong>⚠️ 關鍵警示</strong>
+    普通 CPP ≠ RCPP。採購規格書必須明確標示「RCPP（Retort CPP）」，並要求供應商附第三方耐蒸煮認證書。以 CPP 替代將在 3 ~ 6 個月內脫層。
+  </div>
+
+  <div class="section-label">外層選擇（三種選項）</div>
+  <div class="outer-options">
+    <div class="outer-opt recommended">
+      <span class="outer-opt-tag tag-rec">★ 主推</span>
+      <div class="outer-opt-name">PET　12 μm</div>
+      <div class="outer-opt-desc">pH 2~12 化學惰性、熔點最高、尺寸最穩定。是酸性產品外層的標準首選。印刷適性佳。<br><strong>適用：所有 pH 3-5 液劑的基礎結構。</strong></div>
+    </div>
+    <div class="outer-opt alt">
+      <span class="outer-opt-tag tag-alt">替代 A</span>
+      <div class="outer-opt-name">NY（尼龍）　15 μm</div>
+      <div class="outer-opt-desc">韌性與抗穿刺能力遠優於 PET，適合含果粒、顆粒或有骨的果凍。注意：NY 不耐強酸（pH &lt; 3），pH 3~5 尚在可接受範圍，但需確認 NY 的酸耐受報告。<br><strong>適用：含大顆粒果凍、冷凍保存產品。</strong></div>
+    </div>
+    <div class="outer-opt alt">
+      <span class="outer-opt-tag tag-alt">替代 B</span>
+      <div class="outer-opt-name">PET + NY　雙層外結構<br>（PET 12μm / NY 15μm）</div>
+      <div class="outer-opt-desc">將 PET 的耐酸性與 NY 的抗穿刺性結合，形成最強外層結構。總層數達 5 層（PET/NY/AL/RCPP），整體厚度 130 μm 以上，成本最高。<br><strong>適用：高酸高顆粒、長途運輸、高單價產品。</strong></div>
+    </div>
+  </div>
+  <div class="warn-box caution" style="margin-bottom:4px">
+    <strong>⚠️ 關於 NY 用於酸性外層</strong>
+    NY（尼龍）本身不耐強酸，但酸性液劑的 NY 外層並非直接接觸內容物，而是位於袋體外側接觸空氣，故酸腐問題主要在內層，NY 用作外層是安全的。但若袋體發生洩漏，酸液在封口處接觸 NY，長期浸泡可能使 NY 劣化，需納入風險考量。
+  </div>
+
+  <div class="section-label">各層規格</div>
+  <table>
+    <tr><th class="col-item">層位</th><th class="col-spec">推薦規格</th><th class="col-alt">替代規格</th><th>選用說明</th></tr>
+    <tr>
+      <td class="col-item">外層</td>
+      <td>PET　12 μm</td>
+      <td>NY　15 μm / PET+NY</td>
+      <td>PET 為酸性結構標準；NY 或 PET+NY 用於含顆粒或高穿刺風險場景</td>
+    </tr>
+    <tr>
+      <td class="col-item">緩衝層（選配）</td>
+      <td>NY　15 μm</td>
+      <td>— 不含顆粒可省略</td>
+      <td>含果粒時強烈建議，防止顆粒於振動中刺穿 AL</td>
+    </tr>
+    <tr>
+      <td class="col-item">中層（AL）</td><td>9 μm</td><td>7 μm（預算有限）</td>
+      <td>9 μm 比 7 μm 多 22% 厚度，對酸性小分子提供更長的滲透屏障時間</td>
+    </tr>
+    <tr>
+      <td class="col-item">內層</td>
+      <td>RCPP　50 ~ 60 μm</td>
+      <td>RCPP　60 ~ 80 μm（高風險）</td>
+      <td>RCPP 為強制規格；厚度越大，對 AL/RCPP 界面膠水的保護能力越強</td>
+    </tr>
+    <tr>
+      <td class="col-item">總厚度</td><td>110 ~ 140 μm</td><td>100 μm（無 NY 層）</td>
+      <td>含 NY 緩衝層可達 130 μm 以上，為最高強度結構</td>
+    </tr>
+  </table>
+
+  <div class="section-label">膠水規格</div>
+  <table>
+    <tr><th class="col-item">項目</th><th class="col-spec">規格</th><th>說明</th></tr>
+    <tr>
+      <td class="col-item">類別</td>
+      <td><span class="pill pill-red">耐蒸煮級 PU</span><br>Retort Grade　★ 強制</td>
+      <td>高交聯網狀結構，pH 3~5 的 H⁺ 與有機酸難以穿透膠層攻擊 AL。成本約為通用型 2.5~3 倍</td>
+    </tr>
+    <tr>
+      <td class="col-item">最關鍵位置</td>
+      <td><strong>AL/RCPP 介面</strong></td>
+      <td>酸液滲透 RCPP 後直接攻擊此界面，膠水交聯度不足即大面積脫層</td>
+    </tr>
+    <tr><td class="col-item">上膠量</td><td>3.5 ~ 4.5 g/m²</td><td>每增加 0.5 g/m² 約延長 2~3 個月耐酸屏障壽命，建議從嚴</td></tr>
+    <tr><td class="col-item">耐 pH</td><td><strong>pH 2 ~ 5</strong></td><td>Retort Grade 完全覆蓋 pH 3-5 果凍液劑需求</td></tr>
+    <tr><td class="col-item">熟化條件</td><td>50°C × 72h　★ 強制</td><td>不可壓縮；熟化不足時初始剝離強度可能合格，但遇酸後迅速衰減</td></tr>
+    <tr><td class="col-item">Pot life</td><td>≤ 4h</td><td>超過使用壽命者全批廢棄</td></tr>
+  </table>
+
+  <div class="section-label">製程重點</div>
+  <div class="steps">
+    <div class="step-row"><div class="step-num">1</div><div class="step-content">
+      <div class="step-title">原材料驗收　<span class="pill pill-red">★ 嚴格查驗</span></div>
+      <div class="step-body">RCPP 須附耐蒸煮認證書；AL 以強光照射確認不透光（無針孔）；NY 外層需充分預乾燥（60°C × 30min）後上機</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">2</div><div class="step-content">
+      <div class="step-title">電暈確認</div>
+      <div class="step-body">PET ≥ 44 dyn/cm；RCPP ≥ 40 dyn/cm；NY ≥ 42 dyn/cm</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">3</div><div class="step-content">
+      <div class="step-title">調膠　<span class="pill pill-red">★ Pot life ≤ 4h</span></div>
+      <div class="step-body">Retort Grade 雙組份 PU，嚴格依配比，誤差 &lt;2%；混合後靜置 10min 排氣泡；超時全批廢棄</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">4</div><div class="step-content">
+      <div class="step-title">複合貼合</div>
+      <div class="step-body">上膠量 3.5 ~ 4.5 g/m²；線速度降至 50 ~ 80 m/min（確保滲透均勻）；AL/RCPP 介面優先確保上膠均勻</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">5</div><div class="step-content">
+      <div class="step-title">熟化　<span class="pill pill-red">★ 72h 強制，不可壓縮</span></div>
+      <div class="step-body">50°C × 72h；熟化室溫差 ≤ ±2°C；熟化後靜置至室溫，測 AL/RCPP 剝離強度 ≥ 2.5 N/15mm 方可出貨</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">6</div><div class="step-content">
+      <div class="step-title">熱封（製袋）</div>
+      <div class="step-body">180 ~ 200°C　/　0.4 ~ 0.6 MPa　/　1.5 ~ 2.5s；每批次封口強度 ≥ 40 N/15mm；果凍殘留必須清除，防止污染封</div>
+    </div></div>
+    <div class="step-row"><div class="step-num">7</div><div class="step-content">
+      <div class="step-title">成品驗收　<span class="pill pill-red">★ 酸浸測試</span></div>
+      <div class="step-body">切條浸泡 pH 3 模擬液，40°C × 14 天，剝離強度保留率目標 ≥ 60%；落袋測試（充水 200mL，1.2m 高，5 個/批次，不洩漏）</div>
+    </div></div>
+  </div>
+
+  <div class="section-label">注意事項與採購陷阱</div>
+  <table>
+    <tr><th class="col-item">項目</th><th>要求 / 說明</th></tr>
+    <tr><td class="col-item">熱封強度</td><td>≥ 40 N/15mm；夏季高溫倉儲（45°C 車廂）下仍須維持密封</td></tr>
+    <tr><td class="col-item">殘留溶劑</td><td>≤ 3 mg/m²（建議，比法規底線更嚴）；保健食品建議執行遷移量測試（GB 31604 / EU 10/2011）</td></tr>
+    <tr><td class="col-item">採購陷阱①</td><td>以普通 CPP 冒充 RCPP → 驗收時要求附第三方耐蒸煮認證書</td></tr>
+    <tr><td class="col-item">採購陷阱②</td><td>膠水標示「高功能型」但未明確耐酸範圍 → 要求出具 pH 耐受範圍報告</td></tr>
+    <tr><td class="col-item">採購陷阱③</td><td>熟化時間不足 72h 出貨 → 要求隨貨附溫控記錄表（每 2h 自動記錄）</td></tr>
+    <tr><td class="col-item">封口污染</td><td>果凍殘留在封口區造成虛封，充填設備需確保封口區乾淨</td></tr>
+  </table>
+  <div class="warn-box danger" style="margin-top:12px">
+    <strong>⚠️ 最終提醒</strong>
+    結構、膠水、製程三個環節缺一不可。結構選對但膠水等級不足，或熟化時間被壓縮，都會在 3~6 個月內脫層。確定規格前，要求供應商提供「酸性浸泡剝離測試報告（40°C × 14天）」作為必要驗收文件。
+  </div>
+
+</div><!-- /panel-3 -->
+
+<script>
+function switchTab(idx) {
+  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', i===idx));
+  document.querySelectorAll('.panel').forEach((p,i)  => p.classList.toggle('active', i===idx));
+}
+</script>
+</body>
+</html>
