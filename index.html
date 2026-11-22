@@ -2,22 +2,24 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>鋁箔袋複合包材規格建議</title>
 <style>
+:root { color-scheme: light only; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: "Arial", "Microsoft JhengHei", sans-serif;
+  font-family: "Arial", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
   font-size: 13px;
-  background: #f4f6f9;
-  color: #222;
+  background: #f4f6f9 !important;
+  color: #222 !important;
   padding: 28px 20px;
 }
 
 /* ── Page title ── */
 .page-title { text-align: center; margin-bottom: 28px; }
-.page-title h1 { font-size: 21px; font-weight: 700; color: #1a3a5c; }
-.page-title p  { margin-top: 5px; font-size: 12px; color: #777; }
+.page-title h1 { font-size: 21px; font-weight: 700; color: #1a3a5c !important; }
+.page-title p  { margin-top: 5px; font-size: 12px; color: #777 !important; }
 
 /* ── Tabs ── */
 .tabs {
@@ -33,25 +35,25 @@ body {
   border: 1px solid #d0d8e4;
   border-bottom: none;
   border-radius: 6px 6px 0 0;
-  background: #dde5ef;
+  background: #dde5ef !important;
   cursor: pointer;
   font-size: 12.5px;
   font-weight: 600;
-  color: #4a6080;
+  color: #4a6080 !important;
   transition: background .12s;
   white-space: nowrap;
 }
-.tab-btn:hover { background: #c8d5e8; }
-.tab-btn.active { background: #fff; color: #1a3a5c; border-bottom: 1px solid #fff; }
-.tab-btn.t0.active { color: #4a1a6e; border-top: 3px solid #7b3fb5; }
-.tab-btn.t1.active { color: #1a5c36; border-top: 3px solid #2e8b57; }
-.tab-btn.t2.active { color: #1a3a5c; border-top: 3px solid #2e6db4; }
-.tab-btn.t3.active { color: #7a2a00; border-top: 3px solid #c0522a; }
+.tab-btn:hover { background: #c8d5e8 !important; }
+.tab-btn.active { background: #fff !important; color: #1a3a5c !important; border-bottom: 1px solid #fff; }
+.tab-btn.t0.active { color: #4a1a6e !important; border-top: 3px solid #7b3fb5; }
+.tab-btn.t1.active { color: #1a5c36 !important; border-top: 3px solid #2e8b57; }
+.tab-btn.t2.active { color: #1a3a5c !important; border-top: 3px solid #2e6db4; }
+.tab-btn.t3.active { color: #7a2a00 !important; border-top: 3px solid #c0522a; }
 
 /* ── Panels ── */
 .panel {
   display: none;
-  background: #fff;
+  background: #fff !important;
   border: 1px solid #d0d8e4;
   border-radius: 0 6px 6px 6px;
   padding: 26px 26px 34px;
@@ -72,30 +74,30 @@ body {
   font-size: 11px; font-weight: 700;
   padding: 3px 11px; border-radius: 20px; white-space: nowrap;
 }
-.t0 .panel-badge { background: #ede0f7; color: #4a1a6e; }
-.t1 .panel-badge { background: #d4edda; color: #1a5c36; }
-.t2 .panel-badge { background: #d0e4f7; color: #1a3a5c; }
-.t3 .panel-badge { background: #fde8d8; color: #7a2a00; }
+.t0 .panel-badge { background: #ede0f7 !important; color: #4a1a6e !important; }
+.t1 .panel-badge { background: #d4edda !important; color: #1a5c36 !important; }
+.t2 .panel-badge { background: #d0e4f7 !important; color: #1a3a5c !important; }
+.t3 .panel-badge { background: #fde8d8 !important; color: #7a2a00 !important; }
 .panel-header h2 { font-size: 16px; font-weight: 700; }
-.t0 .panel-header h2 { color: #4a1a6e; }
-.t1 .panel-header h2 { color: #1a5c36; }
-.t2 .panel-header h2 { color: #1a3a5c; }
-.t3 .panel-header h2 { color: #7a2a00; }
+.t0 .panel-header h2 { color: #4a1a6e !important; }
+.t1 .panel-header h2 { color: #1a5c36 !important; }
+.t2 .panel-header h2 { color: #1a3a5c !important; }
+.t3 .panel-header h2 { color: #7a2a00 !important; }
 .structure-tag {
   margin-left: auto;
   font-size: 12.5px; font-weight: 700;
   padding: 5px 13px; border-radius: 4px;
   font-family: monospace; letter-spacing: .4px;
 }
-.t1 .structure-tag { background: #eaf7ee; color: #1a5c36; border: 1px solid #aad4bb; }
-.t2 .structure-tag { background: #e6f0fb; color: #1a3a5c; border: 1px solid #aac4e0; }
-.t3 .structure-tag { background: #fdf0e8; color: #7a2a00; border: 1px solid #e0aa88; }
+.t1 .structure-tag { background: #eaf7ee !important; color: #1a5c36 !important; border: 1px solid #aad4bb; }
+.t2 .structure-tag { background: #e6f0fb !important; color: #1a3a5c !important; border: 1px solid #aac4e0; }
+.t3 .structure-tag { background: #fdf0e8 !important; color: #7a2a00 !important; border: 1px solid #e0aa88; }
 
 /* ── Section label ── */
 .section-label {
   font-size: 10.5px; font-weight: 700;
   text-transform: uppercase; letter-spacing: 1.2px;
-  color: #888; margin: 20px 0 7px;
+  color: #888 !important; margin: 20px 0 7px;
 }
 
 /* ── Tables ── */
@@ -106,11 +108,11 @@ th {
 }
 td { padding: 8px 11px; vertical-align: top; line-height: 1.55; border-bottom: 1px solid #eef1f5; }
 tr:last-child td { border-bottom: none; }
-tr:hover td { background: #fafbfd; }
-.t0 th { background: #7b3fb5; color: #fff; }
-.t1 th { background: #2e8b57; color: #fff; }
-.t2 th { background: #2e6db4; color: #fff; }
-.t3 th { background: #c0522a; color: #fff; }
+tr:hover td { background: #fafbfd !important; }
+.t0 th { background: #7b3fb5 !important; color: #fff !important; }
+.t1 th { background: #2e8b57 !important; color: #fff !important; }
+.t2 th { background: #2e6db4 !important; color: #fff !important; }
+.t3 th { background: #c0522a !important; color: #fff !important; }
 
 /* ── Material card grid (tab 0) ── */
 .mat-grid {
@@ -140,10 +142,10 @@ tr:hover td { background: #fafbfd; }
 .mat-card-head .fullname {
   font-size: 11px;
   font-weight: 400;
-  color: rgba(255,255,255,.85);
+  color: rgba(255,255,255,.85) !important;
   line-height: 1.3;
 }
-.mat-card-body { padding: 11px 14px; background: #fff; }
+.mat-card-body { padding: 11px 14px; background: #fff !important; }
 .mat-row {
   display: flex;
   gap: 8px;
@@ -155,20 +157,20 @@ tr:hover td { background: #fafbfd; }
 .mat-key {
   font-weight: 700;
   min-width: 72px;
-  color: #555;
+  color: #555 !important;
   flex-shrink: 0;
 }
-.mat-val { color: #222; }
+.mat-val { color: #222 !important; }
 
 /* card colour themes */
-.mc-opp  .mat-card-head { background: #3e86c8; color: #fff; }
-.mc-pet  .mat-card-head { background: #1a5c36; color: #fff; }
-.mc-al   .mat-card-head { background: #555;    color: #fff; }
-.mc-pe   .mat-card-head { background: #d17a22; color: #fff; }
-.mc-lldpe .mat-card-head { background: #b86a10; color: #fff; }
-.mc-cpp  .mat-card-head { background: #c0522a; color: #fff; }
-.mc-rcpp .mat-card-head { background: #922000; color: #fff; }
-.mc-ny   .mat-card-head { background: #7b3fb5; color: #fff; }
+.mc-opp  .mat-card-head { background: #3e86c8 !important; color: #fff !important; }
+.mc-pet  .mat-card-head { background: #1a5c36 !important; color: #fff !important; }
+.mc-al   .mat-card-head { background: #555 !important;    color: #fff !important; }
+.mc-pe   .mat-card-head { background: #d17a22 !important; color: #fff !important; }
+.mc-lldpe .mat-card-head { background: #b86a10 !important; color: #fff !important; }
+.mc-cpp  .mat-card-head { background: #c0522a !important; color: #fff !important; }
+.mc-rcpp .mat-card-head { background: #922000 !important; color: #fff !important; }
+.mc-ny   .mat-card-head { background: #7b3fb5 !important; color: #fff !important; }
 
 /* badge in card body */
 .cbadge {
@@ -176,27 +178,27 @@ tr:hover td { background: #fafbfd; }
   padding: 1px 7px; border-radius: 10px;
   font-size: 10.5px; font-weight: 700;
 }
-.cb-outer  { background: #d0e4f7; color: #1a3a5c; }
-.cb-mid    { background: #e8e8e8; color: #333; }
-.cb-inner  { background: #fff3e0; color: #7a3c00; }
-.cb-buf    { background: #ede0f7; color: #4a1a6e; }
-.cb-warn   { background: #fde8d8; color: #7a2a00; }
-.cb-ok     { background: #d4edda; color: #1a5c36; }
+.cb-outer  { background: #d0e4f7 !important; color: #1a3a5c !important; }
+.cb-mid    { background: #e8e8e8 !important; color: #333 !important; }
+.cb-inner  { background: #fff3e0 !important; color: #7a3c00 !important; }
+.cb-buf    { background: #ede0f7 !important; color: #4a1a6e !important; }
+.cb-warn   { background: #fde8d8 !important; color: #7a2a00 !important; }
+.cb-ok     { background: #d4edda !important; color: #1a5c36 !important; }
 
 /* ── Layer diagram ── */
 .layer-diagram { display: flex; flex-direction: column; gap: 3px; margin-bottom: 18px; }
 .layer-row { display: flex; align-items: center; gap: 10px; }
 .layer-label {
   font-size: 10px; font-weight: 700;
-  width: 82px; color: #555; text-align: right; flex-shrink: 0;
+  width: 82px; color: #555 !important; text-align: right; flex-shrink: 0;
 }
 .layer-bar { flex: 1; padding: 7px 13px; border-radius: 3px; font-weight: 700; font-size: 12px; }
-.layer-desc { font-size: 11px; color: #555; flex: 1.2; }
-.lay-outer .layer-bar { background: #d9e8f7; color: #1a3a5c; border-left: 4px solid #2e6db4; }
-.lay-mid   .layer-bar { background: #e0e0e0; color: #333;    border-left: 4px solid #888; }
-.lay-ny    .layer-bar { background: #ede7f6; color: #4a148c; border-left: 4px solid #7b1fa2; }
-.lay-inner .layer-bar { background: #fff3e0; color: #7a3c00; border-left: 4px solid #e65100; }
-.layer-arrow { text-align: center; color: #bbb; font-size: 13px; padding-left: 96px; }
+.layer-desc { font-size: 11px; color: #555 !important; flex: 1.2; }
+.lay-outer .layer-bar { background: #d9e8f7 !important; color: #1a3a5c !important; border-left: 4px solid #2e6db4; }
+.lay-mid   .layer-bar { background: #e0e0e0 !important; color: #333 !important;    border-left: 4px solid #888; }
+.lay-ny    .layer-bar { background: #ede7f6 !important; color: #4a148c !important; border-left: 4px solid #7b1fa2; }
+.lay-inner .layer-bar { background: #fff3e0 !important; color: #7a3c00 !important; border-left: 4px solid #e65100; }
+.layer-arrow { text-align: center; color: #bbb !important; font-size: 13px; padding-left: 96px; }
 
 /* ── Outer layer selector (tab 2 & 3) ── */
 .outer-options { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
@@ -204,42 +206,42 @@ tr:hover td { background: #fafbfd; }
   flex: 1; min-width: 160px;
   border: 2px solid #d0d8e4;
   border-radius: 6px; padding: 10px 13px;
-  background: #fafbfd;
+  background: #fafbfd !important;
 }
-.outer-opt.recommended { border-color: #2e6db4; background: #e6f0fb; }
-.outer-opt.alt         { border-color: #aaa;    background: #f7f7f7; }
-.outer-opt.caution     { border-color: #e0aa44; background: #fffbee; }
+.outer-opt.recommended { border-color: #2e6db4; background: #e6f0fb !important; }
+.outer-opt.alt         { border-color: #aaa;    background: #f7f7f7 !important; }
+.outer-opt.caution     { border-color: #e0aa44; background: #fffbee !important; }
 .outer-opt-tag {
   font-size: 10px; font-weight: 700; margin-bottom: 5px;
   padding: 2px 7px; border-radius: 10px; display: inline-block;
 }
-.tag-rec  { background: #d0e4f7; color: #1a3a5c; }
-.tag-alt  { background: #ebebeb; color: #555; }
-.tag-caut { background: #fff3cd; color: #7a4f00; }
-.outer-opt-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; color: #222; }
-.outer-opt-desc { font-size: 11.5px; color: #555; line-height: 1.5; }
+.tag-rec  { background: #d0e4f7 !important; color: #1a3a5c !important; }
+.tag-alt  { background: #ebebeb !important; color: #555 !important; }
+.tag-caut { background: #fff3cd !important; color: #7a4f00 !important; }
+.outer-opt-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; color: #222 !important; }
+.outer-opt-desc { font-size: 11.5px; color: #555 !important; line-height: 1.5; }
 
 /* ── Pill tags ── */
 .pill {
   display: inline-block; padding: 2px 8px;
   border-radius: 20px; font-size: 11px; font-weight: 700; margin: 1px;
 }
-.pill-red    { background: #fde8d8; color: #7a2a00; }
-.pill-green  { background: #d4edda; color: #1a5c36; }
-.pill-blue   { background: #d0e4f7; color: #1a3a5c; }
-.pill-grey   { background: #ebebeb; color: #444; }
-.pill-orange { background: #fff3cd; color: #7a4f00; }
-.pill-purple { background: #ede0f7; color: #4a1a6e; }
+.pill-red    { background: #fde8d8 !important; color: #7a2a00 !important; }
+.pill-green  { background: #d4edda !important; color: #1a5c36 !important; }
+.pill-blue   { background: #d0e4f7 !important; color: #1a3a5c !important; }
+.pill-grey   { background: #ebebeb !important; color: #444 !important; }
+.pill-orange { background: #fff3cd !important; color: #7a4f00 !important; }
+.pill-purple { background: #ede0f7 !important; color: #4a1a6e !important; }
 
 /* ── Warning boxes ── */
 .warn-box {
   border-radius: 5px; padding: 10px 13px;
   margin-top: 8px; font-size: 12px; line-height: 1.6;
 }
-.warn-box.danger  { background: #fdecea; border-left: 4px solid #d9534f; color: #7a1a1a; }
-.warn-box.caution { background: #fff8e1; border-left: 4px solid #f0ad4e; color: #6d4c00; }
-.warn-box.ok      { background: #eaf7ee; border-left: 4px solid #2e8b57; color: #1a5c36; }
-.warn-box.info    { background: #e6f0fb; border-left: 4px solid #2e6db4; color: #1a3a5c; }
+.warn-box.danger  { background: #fdecea !important; border-left: 4px solid #d9534f; color: #7a1a1a !important; }
+.warn-box.caution { background: #fff8e1 !important; border-left: 4px solid #f0ad4e; color: #6d4c00 !important; }
+.warn-box.ok      { background: #eaf7ee !important; border-left: 4px solid #2e8b57; color: #1a5c36 !important; }
+.warn-box.info    { background: #e6f0fb !important; border-left: 4px solid #2e6db4; color: #1a3a5c !important; }
 .warn-box strong  { display: block; margin-bottom: 3px; }
 
 /* ── Steps ── */
@@ -247,21 +249,127 @@ tr:hover td { background: #fafbfd; }
 .step-row { display: flex; align-items: flex-start; }
 .step-num {
   width: 30px; height: 30px; border-radius: 50%;
-  font-size: 12px; font-weight: 700; color: #fff;
+  font-size: 12px; font-weight: 700; color: #fff !important;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; margin-top: 2px;
 }
-.t1 .step-num { background: #2e8b57; }
-.t2 .step-num { background: #2e6db4; }
-.t3 .step-num { background: #c0522a; }
+.t1 .step-num { background: #2e8b57 !important; }
+.t2 .step-num { background: #2e6db4 !important; }
+.t3 .step-num { background: #c0522a !important; }
 .step-content { flex: 1; padding: 2px 0 18px 13px; }
 .step-title { font-weight: 700; font-size: 12.5px; }
-.step-body  { margin-top: 4px; font-size: 12px; color: #444; line-height: 1.65; }
+.step-body  { margin-top: 4px; font-size: 12px; color: #444 !important; line-height: 1.65; }
 
 /* col helpers */
-.col-item { width: 120px; font-weight: 600; color: #444; }
+.col-item { width: 120px; font-weight: 600; color: #444 !important; }
 .col-spec { width: 160px; }
-.col-alt  { width: 145px; color: #666; font-style: italic; }
+.col-alt  { width: 145px; color: #666 !important; font-style: italic; }
+
+/* ── Rating (stars) ── */
+.stars { color: #e0a100 !important; letter-spacing: 1px; font-size: 12px; white-space: nowrap; }
+.stars .off { color: #d6dbe2 !important; }
+.rate-num { color: #666 !important; font-size: 10.5px; margin-left: 4px; }
+.est { display:inline-block; font-size: 9.5px; font-weight:700; padding:0 5px; border-radius:8px;
+       background:#fff3cd !important; color:#7a4f00 !important; margin-left:3px; }
+.src-sup { font-size: 9.5px; color: #2e6db4 !important; vertical-align: super; margin-left: 1px; }
+.legend-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap:10px; margin-top:4px; }
+.legend-card { border:1px solid #e0e6ee; border-radius:6px; padding:9px 12px; font-size:11.5px; line-height:1.7;
+               background:#fafbfd !important; color:#222 !important; }
+.legend-card b { color:#4a1a6e !important; }
+.src-list { font-size: 11px; line-height: 1.75; color:#555 !important; padding-left: 20px; margin-top:4px; }
+.src-list a { color:#2e6db4 !important; word-break: break-all; }
+.mini { font-size: 11.5px; }
+.mini td, .mini th { padding: 6px 9px; }
+
+/* ── Layer groups ── */
+.layer-group { margin-top: 16px; border-radius: 8px; padding: 12px 14px 14px; }
+.layer-group + .layer-group { margin-top: 14px; }
+.lg-outer { background:#eef5fc !important; border-left:5px solid #2e6db4; }
+.lg-mid   { background:#f1f1f1 !important; border-left:5px solid #777; }
+.lg-inner { background:#fff6ea !important; border-left:5px solid #e65100; }
+.layer-group-head { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:10px; }
+.layer-group-head .lg-title { font-size:15px; font-weight:800; }
+.lg-outer .lg-title { color:#1a3a5c !important; }
+.lg-mid   .lg-title { color:#333 !important; }
+.lg-inner .lg-title { color:#7a3c00 !important; }
+.layer-group-head .lg-role { font-size:11.5px; color:#555 !important; }
+.layer-group .mat-grid { margin-top:0; }
+tr.grp td { font-weight:800; font-size:11.5px; padding:6px 11px; letter-spacing:.5px; }
+tr.grp-outer td { background:#d9e8f7 !important; color:#1a3a5c !important; }
+tr.grp-mid td   { background:#e6e6e6 !important; color:#333 !important; }
+tr.grp-inner td { background:#ffe9cc !important; color:#7a3c00 !important; }
+tr.grp:hover td { filter:none; }
+
+/* ── Price tiers ── */
+.tier { margin-top: 10px; }
+.tier:first-of-type { margin-top: 0; }
+.tier-label { display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:800;
+              padding:2px 10px; border-radius:12px; margin-bottom:7px; }
+.tier-low  .tier-label { background:#d4edda !important; color:#1a5c36 !important; }
+.tier-mid  .tier-label { background:#fff3cd !important; color:#7a4f00 !important; }
+.tier-high .tier-label { background:#fde8d8 !important; color:#7a2a00 !important; }
+.tier-base .tier-label { background:#e8e8e8 !important; color:#333 !important; }
+.tier-note { font-size:11px; color:#666 !important; margin-left:6px; font-weight:400; }
+.price-tag { margin-left:auto; font-size:10.5px; font-weight:800; padding:2px 8px; border-radius:10px;
+             background:rgba(255,255,255,.92) !important; color:#333 !important; white-space:nowrap; }
+.mc-vmpet .mat-card-head { background:#8a8f98 !important; color:#fff !important; }
+.mc-al65  .mat-card-head { background:#6b6b6b !important; color:#fff !important; }
+.mc-al7   .mat-card-head { background:#555 !important; color:#fff !important; }
+.mc-al9   .mat-card-head { background:#333 !important; color:#fff !important; }
+
+.tier-row { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:14px; align-items:start; }
+.tier-row .tier { margin-top:0; }
+.tier-row .mat-grid { grid-template-columns: 1fr; }
+.tier-base .mat-grid { grid-template-columns: minmax(0, 520px); }
+.tier-base { margin-bottom: 12px; }
+@media (max-width: 900px) { .tier-row { grid-template-columns: 1fr; } }
+
+/* ── Tab 4: selector ── */
+.tab-btn.t4.active { color: #0b4f4a !important; border-top: 3px solid #128277; }
+.t4 .panel-badge { background: #d3f0ec !important; color: #0b4f4a !important; }
+.t4 .panel-header h2 { color: #0b4f4a !important; }
+.t4 th { background: #128277 !important; color: #fff !important; }
+.sel-wrap { display:grid; grid-template-columns: 340px minmax(0,1fr); gap:20px; align-items:start; }
+@media (max-width: 950px) { .sel-wrap { grid-template-columns: 1fr; } }
+.sel-form { position: sticky; top: 10px; border:1px solid #d6e6e4; border-radius:8px; padding:14px 16px;
+            background:#f6fbfa !important; }
+.sel-q { font-size:12.5px; font-weight:800; color:#0b4f4a !important; margin:12px 0 6px; }
+.sel-q:first-child { margin-top:0; }
+.sel-opt { display:flex; gap:8px; align-items:flex-start; font-size:12.5px; line-height:1.45; padding:5px 6px;
+           border-radius:5px; cursor:pointer; color:#222 !important; }
+.sel-opt:hover { background:#e6f4f2 !important; }
+.sel-opt input { margin-top:2px; accent-color:#128277; flex-shrink:0; }
+.sel-opt small { display:block; color:#777 !important; font-size:11px; }
+.sel-btns { display:flex; gap:8px; margin-top:12px; }
+.sel-btn { flex:1; padding:7px 10px; border-radius:6px; border:1px solid #128277; font-size:12px; font-weight:700; cursor:pointer;
+           background:#fff !important; color:#128277 !important; }
+.sel-btn.primary { background:#128277 !important; color:#fff !important; }
+.res-struct { border:2px solid #128277; border-radius:8px; padding:14px 16px; background:#f1faf8 !important; margin-bottom:14px; }
+.res-struct .rs-title { font-size:11px; font-weight:800; color:#0b4f4a !important; letter-spacing:1px; }
+.res-struct .rs-main { font-size:19px; font-weight:900; color:#0b4f4a !important; margin:4px 0 6px; font-family: monospace, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC"; }
+.res-struct .rs-sub { font-size:12px; color:#333 !important; line-height:1.7; }
+.res-layer { border:1px solid #e2e8ee; border-radius:8px; margin-bottom:12px; overflow:hidden; }
+.res-layer-head { padding:8px 14px; font-weight:800; font-size:13px; }
+.rl-outer .res-layer-head { background:#d9e8f7 !important; color:#1a3a5c !important; }
+.rl-mid   .res-layer-head { background:#e6e6e6 !important; color:#333 !important; }
+.rl-inner .res-layer-head { background:#ffe9cc !important; color:#7a3c00 !important; }
+.cand { display:grid; grid-template-columns: 110px minmax(0,1fr) 54px; gap:10px; align-items:center; padding:8px 14px;
+        border-top:1px solid #eef1f5; font-size:12px; }
+.cand:first-of-type { border-top:none; }
+.cand .cn { font-weight:800; color:#222 !important; }
+.cand .cn .best { display:inline-block; font-size:10px; padding:1px 6px; border-radius:8px; margin-left:4px;
+                  background:#128277 !important; color:#fff !important; }
+.bar { height:10px; border-radius:5px; background:#edf1f4 !important; overflow:hidden; }
+.bar i { display:block; height:100%; border-radius:5px; background:#128277 !important; }
+.cand.second .bar i { background:#6cb8b0 !important; }
+.cand.low .bar i { background:#b9c6cf !important; }
+.cand .sc { text-align:right; font-weight:800; color:#0b4f4a !important; font-size:13px; }
+.cand .why { grid-column: 2 / 4; font-size:11px; color:#666 !important; margin-top:-3px; }
+.cand.excl { opacity:.55; }
+.cand.excl .sc { color:#c0522a !important; font-size:11px; }
+.cand.excl .bar i { background:#e7c3b5 !important; }
+.res-empty { padding:30px; text-align:center; color:#888 !important; font-size:13px; border:1px dashed #cfd8df; border-radius:8px; }
+.res-notes li { margin: 3px 0; }
 </style>
 </head>
 <body>
@@ -276,6 +384,7 @@ tr:hover td { background: #fafbfd; }
   <button class="tab-btn t1"        onclick="switchTab(1)">① 粉劑</button>
   <button class="tab-btn t2"        onclick="switchTab(2)">② 中性液劑</button>
   <button class="tab-btn t3"        onclick="switchTab(3)">③ pH 3-5 果凍液劑</button>
+  <button class="tab-btn t4"        onclick="switchTab(4)">④ 包材選擇器</button>
 </div>
 
 
@@ -289,14 +398,18 @@ tr:hover td { background: #fafbfd; }
     <h2>常用薄膜材料特性總覽</h2>
   </div>
 
-  <div class="section-label">各材料快速查閱卡</div>
-  <div class="mat-grid">
-
-    <!-- OPP -->
+  <div class="section-label">各材料快速查閱卡（依層位分組，組內依價位低→高）</div>
+    <div class="layer-group lg-outer">
+    <div class="layer-group-head"><span class="lg-title">外層 Outer</span><span class="lg-role">面對外界：印刷、耐刮、撐住袋型；NY 也常夾在外層與鋁箔之間當緩衝層</span></div>
+    <div class="tier-row">
+    <div class="tier tier-low">
+      <span class="tier-label">💲 低價</span><span class="tier-note">成本最低</span>
+      <div class="mat-grid">
     <div class="mat-card mc-opp">
       <div class="mat-card-head">
         <span class="abbr">OPP</span>
         <span class="fullname">Oriented Polypropylene<br>雙向延伸聚丙烯</span>
+        <span class="price-tag">💲 低價</span>
       </div>
       <div class="mat-card-body">
         <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-outer">外層</span></span></div>
@@ -306,14 +419,22 @@ tr:hover td { background: #fafbfd; }
         <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">透明度高、剛性好、成本最低、印刷適性佳</span></div>
         <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">不耐高溫製程、熱封需依賴其他內層</span></div>
         <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">乾燥粉末、零食、常溫充填產品</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★<span class="off">★★</span></span><span class="rate-num">15 μm：WVTR 8.0 g/m²·天<span class="src-sup">[1]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">15 μm：OTR 2,200 cc/m²·天<span class="src-sup">[1]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">透明度</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">霧度 1.6~2.0%<span class="src-sup">[1]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">透明膜，幾乎不擋光</span></span></div>
       </div>
     </div>
-
-    <!-- PET -->
+      </div>
+    </div>
+    <div class="tier tier-mid">
+      <span class="tier-label">💲💲 中價</span><span class="tier-note">比 OPP 貴約 20~30%</span>
+      <div class="mat-grid">
     <div class="mat-card mc-pet">
       <div class="mat-card-head">
         <span class="abbr">PET</span>
         <span class="fullname">Polyethylene Terephthalate<br>聚對苯二甲酸乙二酯</span>
+        <span class="price-tag">💲💲 中價</span>
       </div>
       <div class="mat-card-body">
         <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-outer">外層</span></span></div>
@@ -323,10 +444,46 @@ tr:hover td { background: #fafbfd; }
         <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">剛性最強、尺寸穩定、耐高溫、抗酸鹼、印刷精度最高</span></div>
         <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">成本較 OPP 高 20 ~ 30%，需搭配熱封內層</span></div>
         <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">液劑、酸性產品、高溫充填、高品質印刷</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★<span class="off">★★★</span></span><span class="rate-num">12 μm：WVTR 45 g/m²·天<span class="src-sup">[2]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★★<span class="off">★★</span></span><span class="rate-num">12 μm：OTR 130 cc/m²·天<span class="src-sup">[2]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">透明度</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">12 μm 霧度 1.3~2.5%<span class="src-sup">[3]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">透明膜，幾乎不擋光</span></span></div>
       </div>
     </div>
-
-    <!-- AL -->
+      </div>
+    </div>
+    <div class="tier tier-high">
+      <span class="tier-label">💲💲💲 高價</span><span class="tier-note">韌性最強，成本最高</span>
+      <div class="mat-grid">
+    <div class="mat-card mc-ny">
+      <div class="mat-card-head">
+        <span class="abbr">NY / PA</span>
+        <span class="fullname">Nylon / Polyamide<br>尼龍 / 聚醯胺</span>
+        <span class="price-tag">💲💲💲 高價</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-outer">外層</span>　或　<span class="cbadge cb-buf">緩衝層（外層與AL之間）</span></span></div>
+        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">約 220°C（熔點高，耐蒸煮）</span></div>
+        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val">中等；不耐強酸（pH &lt;3）、不耐強鹼（pH &gt;10）</span></div>
+        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val"><strong>韌性最強</strong>、抗穿刺力高、斷裂伸長率大；防止 AL 折疊微孔</span></div>
+        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">易吸濕（影響加工穩定性），加工前需充分乾燥；成本較高</span></div>
+        <div class="mat-row"><span class="mat-key">用作外層</span><span class="mat-val">提供良好抗穿刺與耐磨性，常見於冷凍食品、含骨肉類包裝</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">含顆粒果凍、冷凍食品、需高耐穿刺的液劑包裝</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">15 μm：WVTR 約 120 g/m²·天<span class="src-sup">[6]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★★<span class="off">★★</span></span><span class="rate-num">15 μm：OTR 約 45 cc/m²·天<span class="src-sup">[6]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">透明度</span><span class="mat-val"><span class="stars">★★★★<span class="off">★</span></span><span class="rate-num">12~15 μm 霧度 3.5~3.8%<span class="src-sup">[12]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">透明膜，幾乎不擋光</span></span></div>
+      </div>
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="layer-group lg-mid">
+    <div class="layer-group-head"><span class="lg-title">中層 Middle</span><span class="lg-role">阻隔主力：擋水氣、氧氣、光線。鋁箔越厚，鋁用量越多、價格越高、針孔越少</span></div>
+    <div class="tier tier-base">
+      <span class="tier-label">共通特性</span><span class="tier-note">所有鋁箔厚度都適用</span>
+      <div class="mat-grid">
     <div class="mat-card mc-al">
       <div class="mat-card-head">
         <span class="abbr">AL</span>
@@ -340,14 +497,107 @@ tr:hover td { background: #fafbfd; }
         <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">近乎 100% 阻隔水氣（WVTR）、氧氣（OTR）、光線</span></div>
         <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">脆、易折出微孔（Pinhole）、不耐酸鹼直接接觸</span></div>
         <div class="mat-row"><span class="mat-key">辨識方法</span><span class="mat-val">對光完全不透光 → 純鋁箔；透光 → 鍍鋁（VMPET）</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0；越薄針孔越多<span class="src-sup">[8]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0；反覆彎折會劣化<span class="src-sup">[9]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">透明度</span><span class="mat-val"><span class="rate-num" style="margin-left:0">不透光（不適用）</span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">完全遮光</span></span></div>
       </div>
     </div>
-
-    <!-- PE -->
+      </div>
+    </div>
+    <div class="tier-row">
+    <div class="tier tier-low">
+      <span class="tier-label">💲 低價</span><span class="tier-note">鍍鋁膜，不是純鋁箔</span>
+      <div class="mat-grid">
+    <div class="mat-card mc-vmpet">
+      <div class="mat-card-head">
+        <span class="abbr">VMPET</span>
+        <span class="fullname">Vacuum Metallized PET<br>真空鍍鋁 PET</span>
+        <span class="price-tag">💲 低價</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">定位</span><span class="mat-val"><span class="cbadge cb-mid">鋁箔的平價替代</span>　PET 表面蒸鍍一層極薄的鋁</span></div>
+        <div class="mat-row"><span class="mat-key">價格</span><span class="mat-val">比純鋁箔便宜，重量也較輕<span class="src-sup">[14]</span></span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★★<span class="off">★</span></span><span class="rate-num">高光密度等級 WVTR ≤ 0.15 g/m²·天<span class="src-sup">[15]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★★★<span class="off">★</span></span><span class="rate-num">OTR 0.16~1.7 cc/m²·天<span class="src-sup">[5]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★★★★<span class="off">★</span></span><span class="rate-num">高光密度等級透光 ≤ 0.3%<span class="src-sup">[15]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">耐彎折</span><span class="mat-val">比鋁箔不怕折：同樣彎折測試下，阻氧受影響較小<span class="src-sup">[9]</span></span></div>
+        <div class="mat-row"><span class="mat-key">辨識</span><span class="mat-val">對著光看會微微透光（純鋁箔完全不透光）</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">一般乾燥粉末、零食、咖啡；離島或長保存期仍建議用純鋁箔</span></div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div class="tier tier-mid">
+      <span class="tier-label">💲💲 中價</span><span class="tier-note">純鋁箔薄規格</span>
+      <div class="mat-grid">
+    <div class="mat-card mc-al65">
+      <div class="mat-card-head">
+        <span class="abbr">AL 6.5</span>
+        <span class="fullname">Aluminum Foil 6.5 μm<br>鋁箔 6.5 μm</span>
+        <span class="price-tag">💲💲 中價</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">厚度</span><span class="mat-val">6.5 μm　鋁用量約 17.6 g/m²<span class="src-sup">[16]</span></span></div>
+        <div class="mat-row"><span class="mat-key">價格</span><span class="mat-val">鋁用量比 7 μm 少約 7%</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0</span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0</span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">完全遮光</span></span></div>
+        <div class="mat-row"><span class="mat-key">針孔風險</span><span class="mat-val"><span class="cbadge cb-warn">三者最高</span>　越薄針孔越多<span class="src-sup">[8]</span></span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">成本敏感、短保存期、運輸短的乾燥粉末</span></div>
+      </div>
+    </div>
+    <div class="mat-card mc-al7">
+      <div class="mat-card-head">
+        <span class="abbr">AL 7</span>
+        <span class="fullname">Aluminum Foil 7 μm<br>鋁箔 7 μm</span>
+        <span class="price-tag">💲💲 中價</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">厚度</span><span class="mat-val">7 μm　鋁用量約 18.9 g/m²<span class="src-sup">[16]</span></span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0</span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0</span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">完全遮光</span></span></div>
+        <div class="mat-row"><span class="mat-key">針孔風險</span><span class="mat-val"><span class="cbadge cb-mid">中等</span>　業界最常見的軟包裝厚度</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">粉劑、中性液劑的標準選擇</span></div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div class="tier tier-high">
+      <span class="tier-label">💲💲💲 高價</span><span class="tier-note">純鋁箔厚規格</span>
+      <div class="mat-grid">
+    <div class="mat-card mc-al9">
+      <div class="mat-card-head">
+        <span class="abbr">AL 9</span>
+        <span class="fullname">Aluminum Foil 9 μm<br>鋁箔 9 μm</span>
+        <span class="price-tag">💲💲💲 高價</span>
+      </div>
+      <div class="mat-card-body">
+        <div class="mat-row"><span class="mat-key">厚度</span><span class="mat-val">9 μm　鋁用量約 24.3 g/m²<span class="src-sup">[16]</span></span></div>
+        <div class="mat-row"><span class="mat-key">價格</span><span class="mat-val">鋁用量比 7 μm 多約 29%</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0</span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">無針孔時近乎 0</span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★★★★★<span class="off"></span></span><span class="rate-num">完全遮光</span></span></div>
+        <div class="mat-row"><span class="mat-key">針孔風險</span><span class="mat-val"><span class="cbadge cb-ok">三者最低</span>　較耐搬運彎折</span></div>
+        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">酸性果凍、長途運輸、沿海與離島、長保存期</span></div>
+      </div>
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="layer-group lg-inner">
+    <div class="layer-group-head"><span class="lg-title">內層 Inner</span><span class="lg-role">接觸產品＋熱封：決定封口強度、耐酸耐油、耐蒸煮</span></div>
+    <div class="tier-row">
+    <div class="tier tier-low">
+      <span class="tier-label">💲 低價</span><span class="tier-note">成本最低，只適合乾燥中性產品</span>
+      <div class="mat-grid">
     <div class="mat-card mc-pe">
       <div class="mat-card-head">
         <span class="abbr">PE</span>
         <span class="fullname">Polyethylene<br>聚乙烯</span>
+        <span class="price-tag">💲 低價</span>
       </div>
       <div class="mat-card-body">
         <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
@@ -357,14 +607,22 @@ tr:hover td { background: #fafbfd; }
         <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">成本最低、柔軟性佳、低溫熱封性好</span></div>
         <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">耐熱差、對酸性及油脂阻隔力弱於 CPP</span></div>
         <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">乾燥粉末、常溫中性產品；不建議用於液劑或酸性產品</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★<span class="off">★★</span></span><span class="rate-num">LDPE 50 μm ≈ 8~11.5 g/m²·天 <span class="est">換算</span><span class="src-sup">[4]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">LDPE 50 μm ≈ 3,500~4,250 cc/m²·天 <span class="est">換算</span><span class="src-sup">[5]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">HDPE</span><span class="mat-val"><span class="rate-num" style="margin-left:0">25 μm：WVTR 4.7~7.8、OTR 2,300~3,100（防潮較 LDPE 好）<span class="src-sup">[4]</span><span class="src-sup">[5]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">半透明，幾乎不擋光</span></span></div>
       </div>
     </div>
-
-    <!-- LLDPE -->
+      </div>
+    </div>
+    <div class="tier tier-mid">
+      <span class="tier-label">💲💲 中價</span><span class="tier-note">粉劑選 LLDPE，液劑或含油選 CPP</span>
+      <div class="mat-grid">
     <div class="mat-card mc-lldpe">
       <div class="mat-card-head">
         <span class="abbr">LLDPE</span>
         <span class="fullname">Linear Low Density Polyethylene<br>線性低密度聚乙烯</span>
+        <span class="price-tag">💲💲 中價</span>
       </div>
       <div class="mat-card-body">
         <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
@@ -374,14 +632,17 @@ tr:hover td { background: #fafbfd; }
         <div class="mat-row"><span class="mat-key">熱封性</span><span class="mat-val"><span class="cbadge cb-ok">優</span>　熱封起始溫度低，封口外觀更平整</span></div>
         <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">比 LDPE 更韌、更耐撕裂，熱封強度略優於 LDPE</span></div>
         <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">粉劑標準內層；需要柔韌性的軟包裝；比 LDPE 更推薦</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★<span class="off">★★</span></span><span class="rate-num">無獨立可查數值，參考 LDPE <span class="est">參考</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">無獨立可查數值，參考 LDPE <span class="est">參考</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">透明度</span><span class="mat-val"><span class="stars">★★<span class="off">★★★</span></span><span class="rate-num">霧度約 12~22%（依樹脂牌號）<span class="src-sup">[7]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">半透明，幾乎不擋光</span></span></div>
       </div>
     </div>
-
-    <!-- CPP -->
     <div class="mat-card mc-cpp">
       <div class="mat-card-head">
         <span class="abbr">CPP</span>
         <span class="fullname">Cast Polypropylene<br>流延聚丙烯</span>
+        <span class="price-tag">💲💲 中價</span>
       </div>
       <div class="mat-card-body">
         <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
@@ -392,14 +653,22 @@ tr:hover td { background: #fafbfd; }
         <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">耐熱耐油、化學穩定、分子間隙比 PE 小（酸性阻隔更佳）</span></div>
         <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">不耐蒸煮（121°C 以上需用 RCPP）</span></div>
         <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">中性液劑、含油粉末；pH 3-5 液劑需升級 RCPP</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★<span class="off">★★</span></span><span class="rate-num">40~50 μm ≈ 4.7~6.9 g/m²·天 <span class="est">換算</span><span class="src-sup">[4]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★<span class="off">★★★</span></span><span class="rate-num">40~50 μm ≈ 1,150~1,940 cc/m²·天 <span class="est">換算</span><span class="src-sup">[5]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">透明度</span><span class="mat-val"><span class="stars">★★★★<span class="off">★</span></span><span class="rate-num">25 μm 霧度約 3.6%<span class="src-sup">[10]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">透明膜，幾乎不擋光</span></span></div>
       </div>
     </div>
-
-    <!-- RCPP -->
+      </div>
+    </div>
+    <div class="tier tier-high">
+      <span class="tier-label">💲💲💲 高價</span><span class="tier-note">酸性、蒸煮專用</span>
+      <div class="mat-grid">
     <div class="mat-card mc-rcpp">
       <div class="mat-card-head">
         <span class="abbr">RCPP</span>
         <span class="fullname">Retort Cast Polypropylene<br>耐蒸煮流延聚丙烯</span>
+        <span class="price-tag">💲💲💲 高價</span>
       </div>
       <div class="mat-card-body">
         <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-inner">內層（熱封層）</span></span></div>
@@ -409,33 +678,24 @@ tr:hover td { background: #fafbfd; }
         <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val">耐酸滲透能力比 CPP 強 3~5 倍；pH 3-5 唯一推薦內層</span></div>
         <div class="mat-row"><span class="mat-key">採購警示</span><span class="mat-val"><span class="cbadge cb-warn">供應商可能以 CPP 冒充</span>　須要求附耐蒸煮認證書</span></div>
         <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">pH 3-5 酸性液劑、果凍、需高溫殺菌之食品</span></div>
+        <div class="mat-row"><span class="mat-key">防潮</span><span class="mat-val"><span class="stars">★★★<span class="off">★★</span></span><span class="rate-num">50~60 μm ≈ 3.9~5.5 g/m²·天，參考 CPP <span class="est">換算</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">阻氧</span><span class="mat-val"><span class="stars">★★<span class="off">★★★</span></span><span class="rate-num">50~60 μm ≈ 960~1,550 cc/m²·天，參考 CPP <span class="est">換算</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">透明度</span><span class="mat-val"><span class="stars">★★<span class="off">★★★</span></span><span class="rate-num">70~90 μm 霧度 &lt;25%（耐 135°C×30 分鐘）<span class="src-sup">[11]</span></span></span></div>
+        <div class="mat-row"><span class="mat-key">遮光</span><span class="mat-val"><span class="stars">★<span class="off">★★★★</span></span><span class="rate-num">半透明，幾乎不擋光</span></span></div>
       </div>
     </div>
-
-    <!-- NY -->
-    <div class="mat-card mc-ny">
-      <div class="mat-card-head">
-        <span class="abbr">NY / PA</span>
-        <span class="fullname">Nylon / Polyamide<br>尼龍 / 聚醯胺</span>
-      </div>
-      <div class="mat-card-body">
-        <div class="mat-row"><span class="mat-key">常用層位</span><span class="mat-val"><span class="cbadge cb-outer">外層</span>　或　<span class="cbadge cb-buf">緩衝層（外層與AL之間）</span></span></div>
-        <div class="mat-row"><span class="mat-key">耐熱上限</span><span class="mat-val">約 220°C（熔點高，耐蒸煮）</span></div>
-        <div class="mat-row"><span class="mat-key">pH 耐受</span><span class="mat-val">中等；不耐強酸（pH &lt;3）、不耐強鹼（pH &gt;10）</span></div>
-        <div class="mat-row"><span class="mat-key">核心優點</span><span class="mat-val"><strong>韌性最強</strong>、抗穿刺力高、斷裂伸長率大；防止 AL 折疊微孔</span></div>
-        <div class="mat-row"><span class="mat-key">核心缺點</span><span class="mat-val">易吸濕（影響加工穩定性），加工前需充分乾燥；成本較高</span></div>
-        <div class="mat-row"><span class="mat-key">用作外層</span><span class="mat-val">提供良好抗穿刺與耐磨性，常見於冷凍食品、含骨肉類包裝</span></div>
-        <div class="mat-row"><span class="mat-key">適用場景</span><span class="mat-val">含顆粒果凍、冷凍食品、需高耐穿刺的液劑包裝</span></div>
       </div>
     </div>
-
-  </div><!-- /mat-grid -->
+    </div>
+  </div>
+  <!-- /mat-grid -->
 
   <div class="section-label">材料比較速查表</div>
   <table>
     <tr>
       <th>材料</th><th>耐熱上限</th><th>pH 耐受</th><th>熱封性</th><th>抗穿刺</th><th>成本指數</th><th>主要用途層位</th>
     </tr>
+    <tr class="grp grp-outer"><td colspan="7">▍外層 Outer</td></tr>
     <tr>
       <td><strong>OPP</strong></td><td>100 ~ 110°C</td><td>中等</td>
       <td><span class="pill pill-red">差</span></td><td><span class="pill pill-grey">普通</span></td>
@@ -451,11 +711,13 @@ tr:hover td { background: #fafbfd; }
       <td><span class="pill pill-orange">普通</span></td><td><span class="pill pill-green">最強</span></td>
       <td>★★★☆☆</td><td>外層 / 緩衝層</td>
     </tr>
+    <tr class="grp grp-mid"><td colspan="7">▍中層 Middle（阻隔）</td></tr>
     <tr>
       <td><strong>AL</strong></td><td>實用無上限</td><td><span class="pill pill-red">差（金屬腐蝕）</span></td>
       <td><span class="pill pill-red">無</span></td><td><span class="pill pill-red">極脆</span></td>
       <td>★★★☆☆</td><td>中層（阻隔）</td>
     </tr>
+    <tr class="grp grp-inner"><td colspan="7">▍內層 Inner（熱封）</td></tr>
     <tr>
       <td><strong>PE</strong></td><td>105 ~ 130°C</td><td>良好（但滲透率高）</td>
       <td><span class="pill pill-green">優</span></td><td><span class="pill pill-grey">普通</span></td>
@@ -478,6 +740,162 @@ tr:hover td { background: #fafbfd; }
       <td>★★★☆☆</td><td>內層</td>
     </tr>
   </table>
+
+  <div class="section-label">阻隔與光學評分（依本頁建議的常用厚度）</div>
+  <table>
+    <tr>
+      <th>材料</th><th>常用厚度</th>
+      <th>防潮（WVTR）<br>g/m²·天，38°C / 90%RH</th>
+      <th>阻氧（OTR）<br>cc/m²·天，23°C / 0%RH</th>
+      <th>透明度（霧度 Haze）</th>
+      <th>遮光</th><th>價位</th>
+    </tr>
+    <tr class="grp grp-outer"><td colspan="7">▍外層 Outer</td></tr>
+    <tr>
+      <td><strong>OPP</strong></td><td>15 μm</td>
+      <td><span class="stars">★★★<span class="off">★★</span></span><br><span class="rate-num" style="margin-left:0">8.0<span class="src-sup">[1]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span><br><span class="rate-num" style="margin-left:0">2,200<span class="src-sup">[1]</span></span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">1.6~2.0%<span class="src-sup">[1]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span></td>
+      <td>💲 低價</td>
+    </tr>
+    <tr>
+      <td><strong>PET</strong></td><td>12 μm</td>
+      <td><span class="stars">★★<span class="off">★★★</span></span><br><span class="rate-num" style="margin-left:0">45<span class="src-sup">[2]</span></span></td>
+      <td><span class="stars">★★★<span class="off">★★</span></span><br><span class="rate-num" style="margin-left:0">130<span class="src-sup">[2]</span></span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">1.3~2.5%<span class="src-sup">[3]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span></td>
+      <td>💲💲 中價</td>
+    </tr>
+    <tr>
+      <td><strong>NY</strong></td><td>15 μm</td>
+      <td><span class="stars">★<span class="off">★★★★</span></span><br><span class="rate-num" style="margin-left:0">約 120<span class="src-sup">[6]</span></span></td>
+      <td><span class="stars">★★★<span class="off">★★</span></span><br><span class="rate-num" style="margin-left:0">約 45<span class="src-sup">[6]</span></span></td>
+      <td><span class="stars">★★★★<span class="off">★</span></span><br><span class="rate-num" style="margin-left:0">3.5~3.8%<span class="src-sup">[12]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span></td>
+      <td>💲💲💲 高價</td>
+    </tr>
+    <tr class="grp grp-mid"><td colspan="7">▍中層 Middle（阻隔）</td></tr>
+    <tr>
+      <td><strong>VMPET</strong></td><td>12 μm</td>
+      <td><span class="stars">★★★★<span class="off">★</span></span><br><span class="rate-num" style="margin-left:0">≤ 0.15（高光密度級）<span class="src-sup">[15]</span></span></td>
+      <td><span class="stars">★★★★<span class="off">★</span></span><br><span class="rate-num" style="margin-left:0">0.16~1.7<span class="src-sup">[5]</span></span></td>
+      <td>—<br><span class="rate-num" style="margin-left:0">金屬光澤，微透光</span></td>
+      <td><span class="stars">★★★★<span class="off">★</span></span></td>
+      <td>💲 低價</td>
+    </tr>
+    <tr>
+      <td><strong>AL 6.5</strong></td><td>6.5 μm</td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">近乎 0，針孔最多<span class="src-sup">[8]</span></span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">近乎 0</span></td>
+      <td>—<br><span class="rate-num" style="margin-left:0">不透光</span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span></td>
+      <td>💲💲 中價</td>
+    </tr>
+    <tr>
+      <td><strong>AL 7</strong></td><td>7 μm</td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">近乎 0（業界標準）</span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">近乎 0</span></td>
+      <td>—<br><span class="rate-num" style="margin-left:0">不透光</span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span></td>
+      <td>💲💲 中價</td>
+    </tr>
+    <tr>
+      <td><strong>AL 9</strong></td><td>9 μm</td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">近乎 0，針孔最少</span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span><br><span class="rate-num" style="margin-left:0">近乎 0</span></td>
+      <td>—<br><span class="rate-num" style="margin-left:0">不透光</span></td>
+      <td><span class="stars">★★★★★<span class="off"></span></span></td>
+      <td>💲💲💲 高價</td>
+    </tr>
+    <tr class="grp grp-inner"><td colspan="7">▍內層 Inner（熱封）</td></tr>
+    <tr>
+      <td><strong>LDPE</strong></td><td>50 μm</td>
+      <td><span class="stars">★★★<span class="off">★★</span></span><br><span class="rate-num" style="margin-left:0">8~11.5 <span class="est">換算</span><span class="src-sup">[4]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span><br><span class="rate-num" style="margin-left:0">3,500~4,250 <span class="est">換算</span><span class="src-sup">[5]</span></span></td>
+      <td><span class="rate-num" style="margin-left:0">—</span><br><span class="rate-num" style="margin-left:0">—</span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span></td>
+      <td>💲 低價</td>
+    </tr>
+    <tr>
+      <td><strong>LLDPE</strong></td><td>50 μm</td>
+      <td><span class="stars">★★★<span class="off">★★</span></span><br><span class="rate-num" style="margin-left:0">參考 LDPE <span class="est">參考</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span><br><span class="rate-num" style="margin-left:0">參考 LDPE <span class="est">參考</span></span></td>
+      <td><span class="stars">★★<span class="off">★★★</span></span><br><span class="rate-num" style="margin-left:0">12~22%<span class="src-sup">[7]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span></td>
+      <td>💲💲 中價</td>
+    </tr>
+    <tr>
+      <td><strong>CPP</strong></td><td>40~50 μm</td>
+      <td><span class="stars">★★★<span class="off">★★</span></span><br><span class="rate-num" style="margin-left:0">4.7~6.9 <span class="est">換算</span><span class="src-sup">[4]</span></span></td>
+      <td><span class="stars">★★<span class="off">★★★</span></span><br><span class="rate-num" style="margin-left:0">1,150~1,940 <span class="est">換算</span><span class="src-sup">[5]</span></span></td>
+      <td><span class="stars">★★★★<span class="off">★</span></span><br><span class="rate-num" style="margin-left:0">約 3.6%（25 μm）<span class="src-sup">[10]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span></td>
+      <td>💲💲 中價</td>
+    </tr>
+    <tr>
+      <td><strong>RCPP</strong></td><td>50~60 μm</td>
+      <td><span class="stars">★★★<span class="off">★★</span></span><br><span class="rate-num" style="margin-left:0">3.9~5.5 <span class="est">換算</span></span></td>
+      <td><span class="stars">★★<span class="off">★★★</span></span><br><span class="rate-num" style="margin-left:0">960~1,550 <span class="est">換算</span></span></td>
+      <td><span class="stars">★★<span class="off">★★★</span></span><br><span class="rate-num" style="margin-left:0">&lt;25%（70~90 μm）<span class="src-sup">[11]</span></span></td>
+      <td><span class="stars">★<span class="off">★★★★</span></span></td>
+      <td>💲💲💲 高價</td>
+    </tr>
+  </table>
+
+  <div class="section-label">評分怎麼給的</div>
+  <div class="legend-grid">
+    <div class="legend-card"><b>防潮（WVTR，數字越小越好）</b><br>
+      <span class="stars">★★★★★<span class="off"></span></span> &lt; 1　<span class="stars">★★★★<span class="off">★</span></span> 1~5<br><span class="stars">★★★<span class="off">★★</span></span> 5~15　<span class="stars">★★<span class="off">★★★</span></span> 15~50<br><span class="stars">★<span class="off">★★★★</span></span> &gt; 50　（g/m²·天）</div>
+    <div class="legend-card"><b>阻氧（OTR，數字越小越好）</b><br>
+      <span class="stars">★★★★★<span class="off"></span></span> &lt; 1　<span class="stars">★★★★<span class="off">★</span></span> 1~20<br><span class="stars">★★★<span class="off">★★</span></span> 20~200　<span class="stars">★★<span class="off">★★★</span></span> 200~2,000<br><span class="stars">★<span class="off">★★★★</span></span> &gt; 2,000　（cc/m²·天）</div>
+    <div class="legend-card"><b>透明度（霧度越低越透明）</b><br>
+      <span class="stars">★★★★★<span class="off"></span></span> ≤ 3%　<span class="stars">★★★★<span class="off">★</span></span> 3~5%<br><span class="stars">★★★<span class="off">★★</span></span> 5~12%　<span class="stars">★★<span class="off">★★★</span></span> 12~25%<br><span class="stars">★<span class="off">★★★★</span></span> &gt; 25%</div>
+    <div class="legend-card"><b>遮光</b><br>
+      <span class="stars">★★★★★<span class="off"></span></span> 純鋁箔，完全不透光<br><span class="stars">★<span class="off">★★★★</span></span> 透明或半透明塑膠膜<br>
+      <span style="color:#666 !important">鍍鋁膜（VMPET）介於兩者之間，阻氧約 0.16~1.7 cc/m²·天<span class="src-sup">[5]</span></span></div>
+  </div>
+  <div class="warn-box info" style="margin-top:10px">
+    <strong>白話說明</strong>
+    ① 評分級距是本頁自訂的，方便比較；數值來自原廠型錄的典型值，<u>不是規格保證</u>。<br>
+    ② 標 <span class="est">換算</span> 的，是用 25 μm 的公開數值按「厚度加倍、透過量約減半」的反比方式推估；標 <span class="est">參考</span> 的，是找不到該材料的獨立公開數值，借用同類材料。<br>
+    ③ 有鋁箔的複合袋，防潮和阻氧幾乎全靠鋁箔；塑膠層的評分主要在「萬一鋁箔有針孔或折痕」時決定剩下的防護。<br>
+    ④ NY 防潮只有一顆星，而且本身會吸濕，所以要夾在 PET 和鋁箔中間，不建議單獨當最外層面對潮濕環境。<br>
+    ⑤ 實際驗收以供應商提供的「複合膜成品」WVTR / OTR 報告為準（ASTM F1249 / D3985）。
+  </div>
+
+  <div class="section-label">厚度對照：同一材料，越厚阻隔越好</div>
+  <table class="mini">
+    <tr><th>PET 厚度</th><th>8 μm</th><th>12 μm</th><th>15 μm</th><th>23 μm</th><th>36 μm</th><th>50 μm</th></tr>
+    <tr><td><strong>WVTR</strong>（g/m²·天）</td><td>50</td><td>45</td><td>40</td><td>30</td><td>20</td><td>16</td></tr>
+    <tr><td><strong>OTR</strong>（cc/m²·天）</td><td>155</td><td>130</td><td>110</td><td>80</td><td>70</td><td>45</td></tr>
+  </table>
+  <div style="font-size:10.5px;color:#888 !important;margin:2px 0 10px">PET 數據來源<span class="src-sup">[2]</span>：同一款透明 BOPET 型錄，38°C/90%RH 與 23°C/0%RH</div>
+  <table class="mini">
+    <tr><th>OPP 厚度</th><th>15 μm</th><th>20 μm</th><th>25 μm</th><th>30 μm</th></tr>
+    <tr><td><strong>WVTR</strong>（g/m²·天）</td><td>8.0<span class="src-sup">[1]</span></td><td>6.8<span class="src-sup">[13]</span></td><td>5.5<span class="src-sup">[13]</span></td><td>4.6<span class="src-sup">[13]</span></td></tr>
+  </table>
+  <div style="font-size:10.5px;color:#888 !important;margin:2px 0 10px">15 μm 與 20~30 μm 來自不同原廠，僅供看趨勢</div>
+
+  <div class="section-label">數據來源</div>
+  <ol class="src-list">
+    <li>Plastchim-T FXCL 15 μm BOPP 技術資料：<a href="https://www.knowde.com/stores/plastchim-t/products/plastchim-t-fxcl-15-m">knowde.com/…/plastchim-t-fxcl-15-m</a></li>
+    <li>Flex Films BOPET 透明膜型錄（8~75 μm 系列）：<a href="https://www.scribd.com/document/712111673/F-PAP">scribd.com/document/712111673/F-PAP</a>；Cosmo Films HSF-1（12 μm：45 / 130）：<a href="https://www.cosmofilms.com/public/uploads/TDS/tds-hsf-1..html">cosmofilms.com</a></li>
+    <li>SuperFilm PETLAIN BOPET 型錄（12 μm 霧度 1.3%~2.5%）：<a href="https://superfilm.com/media/5ajpi4bk/petlainbt1011mma-rev-03-20-03-2025.pdf">superfilm.com</a></li>
+    <li>25 μm 薄膜 WVTR（38°C/90%RH）：BOPP 3.9~6.2、HDPE 4.7~7.8、CPP 9.3~11、LDPE 16~23：<a href="https://www.packaging-warehouse.com/en/adviser/wvtr-water-vapour-barrier-364">packaging-warehouse.com</a></li>
+    <li>1 mil（25 μm）薄膜 OTR（23°C/0%RH）：Nylon 18.6~39、OPET 31~93、OPP 1,550~2,500、Cast PP 與 HDPE 2,300~3,100、LDPE 7,000~8,500、鍍鋁 OPET 0.16~1.7：<a href="https://cameo.mfa.org/wiki/Oxygen_barrier_film">cameo.mfa.org</a></li>
+    <li>15 μm BOPA 技術參數（透濕平均 120、透氧平均 45）：<a href="https://ksbopa.en.made-in-china.com/product/WvXEnZKuCxaO/China-Yuncheng-Plate-Making-Stretch-Film-BOPA.html">昆山運城 BOPA</a></li>
+    <li>Dow LLDPE 樹脂薄膜霧度（12%~22%）：<a href="https://www.dow.com/en-us/pdp.elite-5500g-enhanced-polyethylene-resin.97746z.html">Elite 5500G</a>、<a href="https://dow.com/en-us/pdp.idamp6118601z.18601z.html">18601z</a></li>
+    <li>鋁箔低於 1 mil（約 25 μm）幾乎都有針孔，越薄越多：<a href="https://spmc-website.herokuapp.com/faqs/questions/impact-on-barrier-of-pinholes-in-foil-layer-of-a-lamination">SPMC</a></li>
+    <li>PET/鋁箔/LLDPE 彎折 270 次後失去阻氧；實測複合膜 WVTR 比理論低 55~74%：<a href="https://journals.sagepub.com/doi/abs/10.1177/8756087920963532">Journal of Plastic Film &amp; Sheeting</a></li>
+    <li>25 μm CPP 霧度 3.6%（供應商型錄）：<a href="https://m.made-in-china.com/amp/product/Factory-Soft-Food-Cast-Polypropylene-Film-CPP-for-Packing-2112327414.html">made-in-china.com</a></li>
+    <li>Cosmo Films HST-1 (RT) 耐蒸煮 CPP（70~90 μm，霧度 &lt;25%，135°C×30 分鐘）：<a href="https://www.cosmofilms.com/public/uploads/TDS/tds-hst-1-rt--cpp..html">cosmofilms.com</a></li>
+    <li>Transcendia NYCT1-F BOPA（48 / 60 ga 霧度 3.5% / 3.8%）：<a href="https://www.transcendia.com/sites/default/files/2025-01/NYCT1%20BOPA%20Film%20Datasheet%2001082025.pdf">transcendia.com</a></li>
+    <li>Jindal Films Bicor BOPP 型錄（20 / 25 / 30 μm）：<a href="https://www.jindalfilms.com/wp-content/uploads/2026/07/Product-Portfolio-Flexpack-20260729_Optimized.pdf">jindalfilms.com</a></li>
+    <li>鍍鋁膜外觀像鋁箔，但重量更輕、成本更低：<a href="https://en.wikipedia.org/wiki/Metallised_film">Wikipedia：Metallised film</a></li>
+    <li>Celplast Duramet 高光密度鍍鋁 PET（WVTR ≤ 0.15、透光 ≤ 0.3%）：<a href="https://www.knowde.com/stores/celplast-metallized-products-limited/products/duramet-pcr-pet">knowde.com</a></li>
+    <li>鋁用量 = 鋁密度 2.70 g/cm³ × 厚度（例：7 μm × 2.70 = 18.9 g/m²），為物理換算</li>
+  </ol>
 
 </div><!-- /panel-0 -->
 
@@ -883,11 +1301,226 @@ tr:hover td { background: #fafbfd; }
 
 </div><!-- /panel-3 -->
 
+<!-- ══════════════════════════════════════
+     PANEL 4 — 包材選擇器
+══════════════════════════════════════ -->
+<div class="panel t4" id="panel-4">
+  <div class="panel-header">
+    <span class="panel-badge">研發工具</span>
+    <h2>包材選擇器：勾選產品條件，看內／中／外層建議與評分</h2>
+  </div>
+
+  <div class="sel-wrap">
+    <form class="sel-form" id="selForm" onsubmit="return false">
+      <div class="sel-q">① 產品型態（單選）</div>
+      <label class="sel-opt"><input type="radio" name="form" value="powder_hygro" checked><span>粉劑：易吸濕<small>例：細粉型膠原蛋白胜肽、麥芽糊精、果膠、益生菌、電解質粉、速溶飲品</small></span></label>
+      <label class="sel-opt"><input type="radio" name="form" value="powder_dry"><span>粉劑：不易吸濕<small>例：GELITA 造粒型膠原蛋白胜肽、鈣粉、蛋白粉、一般穀物粉、澱粉</small></span></label>
+      <label class="sel-opt"><input type="radio" name="form" value="powder_oil"><span>粉劑：含油脂<small>例：堅果粉、咖啡粉、奶精、魚油粉</small></span></label>
+      <label class="sel-opt"><input type="radio" name="form" value="liquid"><span>中性液劑（pH 6~7）<small>例：機能飲、口服液</small></span></label>
+      <label class="sel-opt"><input type="radio" name="form" value="acid"><span>酸性液劑／果凍（pH 3~5）<small>例：酵素飲、膠原蛋白果凍、梅精</small></span></label>
+
+            <div style="font-size:11px;line-height:1.55;color:#0b4f4a !important;background:#e6f4f2 !important;border-radius:5px;padding:7px 9px;margin:4px 0 2px">
+        💡 同一種原料，<b>造粒型</b>和<b>細粉型</b>可能要選不同類別。以 GELITA 膠原蛋白胜肽為例，原廠同時供應細粉與造粒（agglomerated）兩種型態，造粒型流動性佳、不需添加流動助劑、低粉塵<span class="src-sup">[G]</span>，吸濕結塊的情況較少，可歸為「不易吸濕」。不確定時，請向原料商索取該型號的吸濕資料。<br>
+        <span style="color:#666 !important">[G] <a href="https://www.gelita.com/en/products/collagen-peptides/peptiplus" style="color:#2e6db4 !important">GELITA PEPTIPLUS® 產品頁</a></span>
+      </div>
+
+      <div class="sel-q">② 產品特性（可複選）</div>
+      <label class="sel-opt"><input type="checkbox" name="need" value="oxid"><span>易氧化<small>含油脂、維生素 C／E、類胡蘿蔔素</small></span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="light"><span>怕光<small>維生素 B2、葉黃素、天然色素</small></span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="sharp"><span>含硬顆粒／尖角<small>凍乾塊、果粒、錠片</small></span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="static"><span>細粉、容易起靜電<small>粒徑 &lt; 50 μm</small></span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="alcohol"><span>含酒精或精油</span></label>
+
+      <div class="sel-q">③ 製程（可複選）</div>
+      <label class="sel-opt"><input type="checkbox" name="need" value="hotfill"><span>熱充填（約 85~95°C）</span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="retort"><span>高溫殺菌／蒸煮（121°C 以上）</span></label>
+
+      <div class="sel-q">④ 通路與保存（可複選）</div>
+      <label class="sel-opt"><input type="checkbox" name="need" value="island"><span>沿海、離島、長途海運</span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="long"><span>保存期 12 個月以上</span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="clear"><span>要看得到內容物（透明袋）</span></label>
+      <label class="sel-opt"><input type="checkbox" name="need" value="budget"><span>預算優先，成本越低越好</span></label>
+
+      <div class="sel-btns">
+        <button type="button" class="sel-btn" onclick="selReset()">清除</button>
+        <button type="button" class="sel-btn primary" onclick="selRun()">更新建議</button>
+      </div>
+    </form>
+
+    <div id="selResult"></div>
+  </div>
+
+  <div class="warn-box caution" style="margin-top:16px">
+    <strong>使用說明</strong>
+    分數 0~100，是把「00 材料特性」頁的星等，依你勾選的條件加權計算出來的，用來做初步篩選。灰色、標「不適用」的材料，是本站各分頁明確不建議的組合。最後定案前，仍要請包材廠提供複合膜成品的 WVTR／OTR、剝離強度與熱封強度報告，並做實際儲存測試。
+  </div>
+</div><!-- /panel-4 -->
+
+
 <script>
 function switchTab(idx) {
   document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', i===idx));
   document.querySelectorAll('.panel').forEach((p,i)  => p.classList.toggle('active', i===idx));
 }
+
+/* ===== 包材選擇器 ===== */
+const MAT = {
+  outer: [
+    {id:'OPP', name:'OPP', moist:3, oxy:1, light:1, clear:5, heat:1, acid:3, tough:2, seal:0, oil:3, flex:3, cost:5, thick:'12~15 μm'},
+    {id:'PET', name:'PET', moist:2, oxy:3, light:1, clear:5, heat:5, acid:5, tough:3, seal:0, oil:4, flex:3, cost:4, thick:'12 μm'},
+    {id:'NY',  name:'NY',  moist:1, oxy:3, light:1, clear:4, heat:4, acid:2, tough:5, seal:0, oil:4, flex:5, cost:2, thick:'15 μm'}
+  ],
+  mid: [
+    {id:'NONE',  name:'無（透明袋）', moist:1, oxy:1, light:1, clear:5, heat:3, acid:3, tough:3, flex:5, cost:5, thick:'—'},
+    {id:'VMPET', name:'VMPET', moist:4, oxy:4, light:4, clear:1, heat:4, acid:3, tough:3, flex:4, cost:4, thick:'12 μm'},
+    {id:'AL65',  name:'AL 6.5 μm', moist:5, oxy:5, light:5, clear:0, heat:5, acid:2, tough:1, flex:1, cost:3, thick:'6.5 μm'},
+    {id:'AL7',   name:'AL 7 μm',   moist:5, oxy:5, light:5, clear:0, heat:5, acid:2, tough:2, flex:2, cost:3, thick:'7 μm'},
+    {id:'AL9',   name:'AL 9 μm',   moist:5, oxy:5, light:5, clear:0, heat:5, acid:3, tough:3, flex:3, cost:2, thick:'9 μm'}
+  ],
+  inner: [
+    {id:'PE',    name:'PE (LDPE)', moist:3, oxy:1, light:1, clear:3, heat:1, acid:2, tough:2, seal:5, oil:2, flex:4, cost:5, thick:'40~60 μm'},
+    {id:'LLDPE', name:'LLDPE',     moist:3, oxy:1, light:1, clear:2, heat:2, acid:3, tough:4, seal:5, oil:2, flex:4, cost:4, thick:'50 μm'},
+    {id:'CPP',   name:'CPP',       moist:3, oxy:2, light:1, clear:4, heat:3, acid:4, tough:3, seal:4, oil:4, flex:3, cost:4, thick:'40~50 μm'},
+    {id:'RCPP',  name:'RCPP',      moist:3, oxy:2, light:1, clear:2, heat:5, acid:5, tough:3, seal:4, oil:5, flex:3, cost:2, thick:'50~60 μm'}
+  ]
+};
+const LABEL = {moist:'防潮', oxy:'阻氧', light:'遮光', clear:'透明', heat:'耐熱', acid:'耐酸', tough:'抗穿刺', seal:'熱封', oil:'耐油', flex:'耐彎折', cost:'價格親民'};
+
+function selGet(){
+  const f=document.getElementById('selForm');
+  const form=(f.querySelector('input[name=form]:checked')||{}).value||'powder_hygro';
+  const need=new Set([...f.querySelectorAll('input[name=need]:checked')].map(x=>x.value));
+  return {form, need};
+}
+
+function weights(layer, s){
+  const n=s.need, F=s.form;
+  // base weights by layer role
+  let w = layer==='outer' ? {heat:0.2, acid:0.3, tough:1, cost:1.5, clear:0.5, flex:1, moist:0.5, oxy:0.3}
+        : layer==='mid'   ? {moist:2, oxy:1.5, light:1, flex:1, cost:1}
+        :                   {seal:2, heat:0.3, acid:0.5, tough:1, oil:0.5, cost:1.5, moist:0.5, flex:0.5};
+  const add=(k,v)=>{ w[k]=(w[k]||0)+v; };
+  if(F==='powder_hygro'){ add('moist', layer==='outer'?0.5:3); if(layer==='inner') add('tough',0.5); }
+  if(F==='powder_dry'){ add('cost',1); }
+  if(F==='powder_oil'){ add('oil',2); add('oxy',1.5); }
+  if(F==='liquid' && layer!=='mid'){ add('heat',1); add('tough',0.5); if(layer==='inner'){ add('acid',2); add('heat',1); } }
+  if(F==='acid'){ add('acid',4); add('heat',1); add('tough',1); }
+  if(n.has('oxid')) add('oxy',3);
+  if(n.has('light')) add('light',3);
+  if(n.has('sharp')) add('tough',3);
+  if(n.has('hotfill')) add('heat',2);
+  if(n.has('retort')) add('heat',4);
+  if(n.has('island')){ add('moist', layer==='outer'?0.3:2); add('flex', layer==='inner'?0.5:2.5); add('tough', layer==='outer'?3:(layer==='inner'?0.5:1.5)); }
+  if(n.has('long')){ add('moist', layer==='outer'?0.3:1.5); add('oxy',1.5); add('flex',1); }
+  if(n.has('clear')) add('clear',4);
+  if(n.has('budget')) add('cost',3);
+  return w;
+}
+
+function exclusion(layer, m, s){
+  const n=s.need, F=s.form, liquid=(F==='liquid'||F==='acid');
+  if(layer==='outer'){
+    if(m.id==='OPP' && n.has('retort')) return '不耐蒸煮（耐熱上限 100~110°C）';
+    if(m.id==='OPP' && n.has('hotfill')) return '僅限常溫充填';
+    if(m.id==='OPP' && F==='acid') return '酸性果凍頁建議 PET 或 NY';
+    if(m.id==='NY' && (n.has('island')||F==='powder_hygro')) return 'NY 會吸濕，潮濕環境不建議當最外層（改當 PET 與鋁箔間的緩衝層）';
+  }
+  if(layer==='mid'){
+    if(n.has('clear')){ if(m.id!=='NONE' && m.id!=='VMPET') return '鋁箔完全不透光'; }
+    else if(m.id==='NONE') return '未勾選透明需求；無阻隔層不建議';
+    if(m.id==='NONE' && (F==='acid'||F==='powder_hygro')) return '易吸濕粉與酸性產品需要阻隔層';
+    if(F==='acid' && (m.id==='AL65'||m.id==='VMPET')) return '酸性果凍頁建議 AL 9 μm';
+  }
+  if(layer==='inner'){
+    if(n.has('retort') && m.id!=='RCPP') return '121°C 以上須用 RCPP';
+    if(F==='acid' && m.id!=='RCPP') return 'pH 3~5 唯一推薦內層為 RCPP';
+    if(liquid && (m.id==='PE')) return '不建議用於液劑';
+    if(n.has('hotfill') && (m.id==='PE')) return '耐熱上限約 105°C，熱充填風險高';
+  }
+  return null;
+}
+
+function score(m,w){
+  let s=0,tot=0; const contrib=[];
+  for(const k in w){ if(m[k]===undefined) continue; s+=w[k]*m[k]; tot+=w[k]*5; contrib.push([k,w[k]*m[k],m[k]]); }
+  contrib.sort((a,b)=>b[1]-a[1]);
+  const good=contrib.filter(c=>c[2]>=4).slice(0,3).map(c=>LABEL[c[0]]);
+  const weak=contrib.filter(c=>c[2]<=2).sort((a,b)=>(w[b[0]]-w[a[0]])).slice(0,2).map(c=>LABEL[c[0]]);
+  return {val: tot? Math.round(s/tot*100):0, good, weak};
+}
+
+function rankLayer(layer,s){
+  const w=weights(layer,s);
+  return MAT[layer].map(m=>{
+    const ex=exclusion(layer,m,s); const r=score(m,w);
+    if(m.id==='RCPP' && !(s.form==='acid'||s.need.has('retort'))){ r.val=Math.round(r.val*0.9); r.weak=['未需蒸煮或耐酸，規格過剩、成本高']; }
+    return {...m, ex, ...r};
+  }).sort((a,b)=> (a.ex?1:0)-(b.ex?1:0) || b.val-a.val);
+}
+
+function innerThick(s){
+  const n=s.need,F=s.form;
+  if(F==='acid'||n.has('retort')) return n.has('island')?'60~80 μm':'50~60 μm';
+  if(F==='liquid') return '40~50 μm';
+  if(F==='powder_hygro'&&n.has('island')) return '70~80 μm';
+  if(n.has('island')||n.has('sharp')) return '60~80 μm';
+  return '50 μm';
+}
+
+function layerHTML(cls,title,list){
+  let k=0;
+  const rows=list.map(m=>{
+    if(m.ex) return `<div class="cand excl"><span class="cn">${m.name}</span><div class="bar"><i style="width:${m.val}%"></i></div><span class="sc">不適用</span><span class="why">${m.ex}</span></div>`;
+    k++;
+    const c = k===1?'':(k===2?'second':'low');
+    const why = (m.good.length?'強項：'+m.good.join('、'):'') + (m.weak.length?'　｜　弱項：'+m.weak.join('、'):'');
+    return `<div class="cand ${c}"><span class="cn">${m.name}${k===1?'<span class="best">首選</span>':''}</span><div class="bar"><i style="width:${m.val}%"></i></div><span class="sc">${m.val}</span><span class="why">${why}</span></div>`;
+  }).join('');
+  return `<div class="res-layer ${cls}"><div class="res-layer-head">${title}</div>${rows}</div>`;
+}
+
+function selRun(){
+  const s=selGet(), n=s.need, F=s.form;
+  const O=rankLayer('outer',s), M=rankLayer('mid',s), I=rankLayer('inner',s);
+  const o=O.find(x=>!x.ex), m=M.find(x=>!x.ex), i=I.find(x=>!x.ex);
+  const buffer = (n.has('island')||n.has('sharp')||F==='acid') && o && o.id!=='NY';
+  const parts=[`${o.name} ${o.thick}`];
+  if(buffer) parts.push('NY 15 μm（緩衝層）');
+  if(m.id!=='NONE') parts.push(`${m.id==='VMPET'?'VMPET 12 μm':m.name}`);
+  parts.push(`${i.name.replace(' (LDPE)','')} ${innerThick(s)}`);
+  const avg=Math.round((o.val+m.val+i.val)/3);
+
+  const notes=[];
+  if(F==='powder_hygro') notes.push('易吸濕粉：封口寬度建議 ≥ 10 mm，充填時做好封口區防塵；可加食品級乾燥劑包。');
+  if(n.has('island')) notes.push('沿海／離島：外箱內套 PE 袋、棧板不落地；建議指定 ASTM F1249（38°C／90%RH）WVTR 報告作驗收。');
+  if(n.has('long')) notes.push('保存期 12 個月以上：建議做 40°C／75%RH 加速儲存，每月測水分或水活性。');
+  if(n.has('static')) notes.push('細粉易靜電：內層選抗靜電型 LLDPE，或充填線加除靜電裝置。');
+  if(n.has('alcohol')) notes.push('含酒精或精油：通用膠水可能溶脹，需做溶脹測試或改無溶劑型 PU。');
+  if(F==='acid') notes.push('酸性產品：膠水強制耐蒸煮級 PU、熟化 50°C × 72 小時；驗收要求 pH 3 模擬液 40°C × 14 天酸浸剝離報告。');
+  if(n.has('retort')) notes.push('蒸煮：RCPP 須附耐蒸煮認證，防止以 CPP 冒充。');
+  if(n.has('clear') && m.id==='NONE') notes.push('透明袋沒有鋁箔，防潮與阻氧主要靠塑膠層，保存期會明顯縮短；易吸濕或易氧化產品建議改用不透明袋加開窗設計。');
+  if(n.has('clear') && m.id==='VMPET') notes.push('VMPET 只是微透光，看不清內容物；若一定要看見產品，需改用透明袋或局部去鍍鋁開窗。');
+  if(m.id==='VMPET' && !n.has('clear')) notes.push('VMPET 比純鋁箔便宜，但阻隔較弱；易吸濕、離島或長保存期建議改純鋁箔。');
+  if(n.has('sharp')) notes.push('硬顆粒：加 NY 緩衝層或外層改 NY，並做落袋測試。');
+
+  document.getElementById('selResult').innerHTML = `
+    <div class="res-struct">
+      <div class="rs-title">建議結構（外 → 內）</div>
+      <div class="rs-main">${parts.join(' / ')}</div>
+      <div class="rs-sub">三層首選平均分數：<b>${avg}</b> / 100${buffer?'　｜　已自動加入 NY 緩衝層（離島、硬顆粒或酸性條件）':''}</div>
+    </div>
+    ${layerHTML('rl-outer','外層 Outer',O)}
+    ${layerHTML('rl-mid','中層 Middle（阻隔）',M)}
+    ${layerHTML('rl-inner','內層 Inner（熱封）',I)}
+    ${notes.length?`<div class="warn-box info"><strong>依你的條件，另外要注意</strong><ul class="res-notes" style="padding-left:18px">${notes.map(x=>'<li>'+x+'</li>').join('')}</ul></div>`:''}`;
+}
+function selReset(){
+  const f=document.getElementById('selForm'); f.reset(); selRun();
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('#selForm input').forEach(x=>x.addEventListener('change',selRun));
+  selRun();
+});
 </script>
 </body>
 </html>
